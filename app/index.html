@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>스테이메이트 — 동행 취향으로 숙소 고르기</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+  .board { display:grid; grid-template-columns:300px minmax(320px, 1fr) 360px; gap:12px; align-items:start; }
+  .board .col { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; }
+  .board .list { max-height:calc(100vh - 170px); overflow:auto; }
+  .board .detail { max-height:calc(100vh - 170px); overflow:auto; position:sticky; top:60px; }
+  .board .mapcol { padding:8px; }
+  #map { height:calc(100vh - 210px); min-height:420px; width:100%; border-radius:8px; }
+  .li { border:1px solid var(--line); border-radius:9px; padding:10px 12px; margin:8px 0; cursor:pointer; }
+  .li:hover { border-color:#bfc4c0; }
+  .li.sel { border-color:var(--acc); box-shadow:0 0 0 2px var(--pos); }
+  .li.dropped { opacity:.6; }
+  .li .name { font-weight:600; font-size:13.5px; }
+  .li .lead-sm { font-size:12px; color:var(--acc); margin-top:2px; }
+  .li .top { display:flex; justify-content:space-between; gap:8px; }
+  .likeline { font-size:12.5px; color:#b3244a; margin-top:4px; font-weight:600; }
+  .visitline { font-size:12.5px; color:#4b3670; margin-top:4px; font-weight:600; }
+  .chosenline { font-size:12.5px; color:var(--acc); margin-top:4px; font-weight:600; }
+  button.decide.on { background:var(--acc); color:#fff; border-color:var(--acc); }
+  button.like { border-color:#e6b8c4; color:#b3244a; }
+  button.like.on { background:#b3244a; color:#fff; border-color:#b3244a; }
+  .cmts { display:grid; gap:8px; }
+  .cmt { border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:13px; }
+  .cmt .cmth { font-size:12px; margin-bottom:2px; }
+  .cmt .cmtt { white-space:pre-wrap; word-break:break-word; }
+  .lp { display:flex; gap:10px; margin-top:8px; border:1px solid var(--line); border-radius:8px; overflow:hidden; text-decoration:none; color:inherit; background:#fafaf8; }
+  .lp img { width:88px; height:88px; object-fit:cover; flex:0 0 88px; }
+  .lp .lpb { padding:8px 10px; min-width:0; }
+  .lp .lpt { font-weight:600; font-size:13px; line-height:1.35; }
+  .lp .lpd { font-size:12px; color:var(--muted); margin-top:2px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .lp .lps { font-size:11px; color:var(--muted); margin-top:4px; }
+  .hb { display:inline-block; font-size:10.5px; font-weight:600; color:var(--acc); border:1px solid var(--acc); padding:0 5px; border-radius:4px; vertical-align:1px; }
+  .tier { display:inline-block; color:#fff; font-size:10.5px; font-weight:600; padding:1px 6px; border-radius:4px; vertical-align:1px; letter-spacing:.02em; }
+  .maplegend i { border:1px solid rgba(0,0,0,.15); }
+  .bhead { margin-bottom:12px; }
+  .invite { margin-top:14px; padding:12px 14px; border-radius:8px; background:var(--pos); color:#155c4b; font-size:13.5px; }
+  .invite code { font-size:12px; background:#fff; padding:4px 8px; border-radius:6px; word-break:break-all; }
+  @media (max-width:1000px) { .board { grid-template-columns:1fr; } .board .list, .board .detail { max-height:none; position:static; } #map { height:60vh; } }
+  .leaflet-popup-content { font-family:inherit; font-size:13px; line-height:1.45; margin:10px 12px; min-width:220px; }
+  .leaflet-popup-content b { font-size:14px; }
+  .leaflet-popup-content button { font:inherit; font-size:12px; padding:3px 8px; margin-top:6px; }
+  .maplegend { display:flex; gap:14px; font-size:12px; color:var(--muted); margin:6px 0 0; }
+  .maplegend i { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:4px; vertical-align:middle; }
+  :root { --bg:#f7f7f5; --card:#fff; --ink:#1b1b1b; --muted:#6b6b6b; --line:#e4e4e0; --acc:#1f6f5f; --warn:#b3461e; --pos:#e7f3ee; --neg:#fbeae4; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; background:var(--bg); color:var(--ink); font-size:14.5px; line-height:1.6; }
+  header { display:flex; align-items:center; gap:12px; padding:10px 16px; background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:1100; flex-wrap:wrap; }
+  header h1 { font-size:16px; margin:0 8px 0 0; }
+  header .sp { flex:1; }
+  header a { color:var(--muted); font-size:12px; }
+  main { max-width:1400px; margin:0 auto; padding:16px; }
+  section.panel { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px 24px; margin-bottom:20px; }
+  h2 { font-size:17px; margin:0 0 14px; }
+  h3 { font-size:13px; margin:20px 0 8px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  button { font:inherit; padding:8px 14px; border-radius:7px; border:1px solid var(--line); background:#fff; cursor:pointer; }
+  button.primary { background:var(--acc); color:#fff; border-color:var(--acc); }
+  button.danger { color:#fff; background:var(--warn); border-color:var(--warn); }
+  button:disabled { opacity:.5; cursor:default; }
+  select, input[type=text], input[type=number], input[type=date] { font:inherit; padding:8px 10px; border:1px solid var(--line); border-radius:7px; background:#fff; }
+  label.f { display:flex; align-items:center; gap:10px; margin:14px 0; flex-wrap:wrap; }
+  label.f > span { display:inline-block; min-width:72px; color:var(--muted); }
+  .f { margin:14px 0; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; }
+  .chip { padding:3px 10px; border-radius:999px; background:#eee; font-size:12.5px; }
+  .chip.opt, .chip.sel { padding:5px 12px; font-size:13px; }
+  .note-out { margin-top:8px; font-size:12.5px; color:#8a3212; background:var(--neg); padding:6px 10px; border-radius:6px; }
+  .chip.pos { background:var(--pos); color:#155c4b; }
+  .chip.neg { background:var(--neg); color:#8a3212; }
+  .chip.sel { background:var(--acc); color:#fff; cursor:pointer; }
+  .chip.opt { cursor:pointer; border:1px solid var(--line); background:#fff; }
+  .muted { color:var(--muted); }
+  .row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .card { border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin:12px 0; background:#fff; }
+  .card.dropped { opacity:.75; background:#fafafa; }
+  .card .top { display:flex; justify-content:space-between; gap:8px; align-items:baseline; flex-wrap:wrap; }
+  .card .name { font-weight:600; font-size:16px; }
+  .score { font-variant-numeric:tabular-nums; color:var(--acc); font-weight:600; }
+  .why { margin-top:8px; font-size:13.5px; line-height:1.55; }
+  .why b { font-weight:600; }
+  .why .rl { display:flex; gap:8px; align-items:baseline; margin:2px 0; }
+  .why .rl .m { flex:0 0 14px; font-weight:700; }
+  .why .rl.ok .m { color:var(--acc); }
+  .why .rl.no .m { color:var(--warn); }
+  .why .rl.ev .m, .why .rl.ev { color:var(--muted); font-size:12.5px; }
+  .why .lead { font-weight:600; margin-bottom:4px; }
+  .tags-sm .chip { font-size:11.5px; padding:2px 8px; opacity:.85; }
+  .tags-sm .chip.hit { background:var(--acc); color:#fff; opacity:1; font-weight:600; box-shadow:0 0 0 2px var(--pos); }
+  .tags-sm .chip.miss { background:var(--warn); color:#fff; opacity:1; font-weight:600; }
+  .tags-sm .chip b { font-weight:700; margin-left:2px; }
+  .votes { margin-top:6px; font-size:12px; color:var(--muted); }
+  .kw { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  @media (max-width:640px) { .kw { grid-template-columns:1fr; } }
+  .quiz .q { margin:14px 0; }
+  .quiz .q .t { font-weight:600; margin-bottom:8px; }
+  .opts { display:grid; grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:8px; }
+  .opt { position:relative; display:block; border:2px solid var(--line); border-radius:8px; overflow:hidden; cursor:pointer; background:#fff; }
+  .opt input { position:absolute; opacity:0; inset:0; margin:0; }
+  .opt img { display:block; width:100%; aspect-ratio:16/10; object-fit:cover; }
+  .opt .noimg { display:flex; align-items:center; justify-content:center; aspect-ratio:16/10; background:#f1f1ee; color:var(--muted); font-size:22px; }
+  .opt .cap { padding:6px 8px; font-size:13px; line-height:1.35; }
+  .opt:has(input:checked) { border-color:var(--acc); box-shadow:0 0 0 2px var(--pos); }
+  .opt:has(input:checked) .cap { color:var(--acc); font-weight:600; }
+  .opt:has(input:focus-visible) { outline:2px solid var(--acc); outline-offset:2px; }
+  .modal .box.wide { max-width:760px; }
+  .credit { font-size:11px; color:var(--muted); margin-top:10px; }
+  .modal { position:fixed; inset:0; background:rgba(0,0,0,.35); display:flex; align-items:center; justify-content:center; z-index:5000; padding:16px; }   /* Leaflet 컨트롤(z 1000)보다 위 */
+  .modal .box { background:#fff; border-radius:10px; padding:18px; max-width:560px; width:100%; max-height:90vh; overflow:auto; }
+  .empty { color:var(--muted); padding:8px 0; }
+  details summary { cursor:pointer; color:var(--muted); }
+  .err { background:var(--neg); color:#8a3212; padding:8px 12px; border-radius:6px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="homeLink" title="여행 목록으로" style="cursor:pointer">스테이메이트</h1>
+  <span class="muted">동행 취향으로 숙소 고르기</span>
+  <a href="schema.html">DB 스키마</a>
+  <a href="api/events" target="_blank">이벤트·해석</a>
+  <a href="api/docs" target="_blank">API</a>
+  <span class="sp"></span>
+  <label>지금 보는 사람
+    <select id="userSel"></select>
+  </label>
+  <button id="shareBtn" title="이 링크로 들어온 사람은 이름을 입력하고 바로 취향 테스트를 합니다">설문 링크 공유</button>
+  <button id="addUserBtn">멤버 추가</button>
+</header>
+<div id="shareBox" hidden style="max-width:1080px;margin:8px auto 0;padding:0 16px"><div class="card row" style="margin:0"><span class="muted">링크가 복사됐습니다</span><code id="shareUrl" style="font-size:12px;word-break:break-all"></code><button id="shareClose">닫기</button></div></div>
+<main id="main"></main>
+<div id="modalRoot"></div>
+<script>
+(() => {
+  // ---------- API ----------
+  const API = "api";
+  const api = async (path, opt = {}) => {
+    const r = await fetch(`${API}${path}`, { headers: { "Content-Type": "application/json" }, ...opt, body: opt.body ? JSON.stringify(opt.body) : undefined });
+    if (!r.ok) throw new Error(`${opt.method || "GET"} ${path} → ${r.status} ${await r.text()}`);
+    return r.json();
+  };
+
+  // ---------- UI 상태 (서버에 없는 것만 브라우저에) ----------
+  const KEY = "staymate-ui";
+  const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(ui)); } catch {} };
+  let ui = { currentUserId: null, currentTripId: null, view: "trips", ...load() };
+  ui.currentUserId = ui.currentUserId == null ? null : +ui.currentUserId;   // 예전 세션의 문자열 id 방어
+  ui.currentTripId = ui.currentTripId == null ? null : +ui.currentTripId;
+  let META = null, USERS = [];
+
+  const user = (id) => USERS.find(u => u.id === id);
+  const cur = () => user(ui.currentUserId) || USERS[0];
+  const dn = (u) => (u?.nickname || u?.name || "");                 // 표시 이름: 닉네임 우선
+  const PARAMS = new URLSearchParams(location.search);
+  const INVITE = PARAMS.has("invite");
+  const INVITE_TRIP = PARAMS.get("trip") ? +PARAMS.get("trip") : null;
+
+  // ---------- render helpers ----------
+  const h = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const chips = (arr, cls = "") => arr.map(t => `<span class="chip ${cls}">${h(t)}</span>`).join("");
+  const topKeywords = (w, n = 6, minAbs = 1) => {
+    const e = Object.entries(w || {}).filter(([, v]) => Math.abs(v) >= minAbs);   // 탈락 숙소 특징 전부에 붙는 ±1 약신호는 minAbs=2 로 숨긴다
+    return { pos: e.filter(([, v]) => v > 0).sort((a, b) => b[1] - a[1]).slice(0, n), neg: e.filter(([, v]) => v < 0).sort((a, b) => a[1] - b[1]).slice(0, n) };
+  };
+  const kwChips = (w, n, minAbs = 1) => { const k = topKeywords(w, n, minAbs); return chips(k.pos.map(([t, v]) => `${t} +${v}`), "pos") + chips(k.neg.map(([t, v]) => `${t} ${v}`), "neg") || '<span class="muted">아직 없음</span>'; };
+  const price = (p) => "₩".repeat(p);
+  const when = (t) => { if (!t.start_date) return ""; const a = new Date(t.start_date), b = t.end_date ? new Date(t.end_date) : null; const n = b ? Math.round((b - a) / 86400000) : 0; return `${t.start_date.slice(5).replace("-", "/")}${b ? "–" + t.end_date.slice(5).replace("-", "/") + (n > 0 ? ` (${n}박)` : "") : ""}`; };
+  const where = (t) => t.location ? `${t.region === "무관" ? "" : t.region + " "}${t.location}` : t.region;
+  const tripMeta = (t) => [t.companions, `${t.people}명`, where(t), when(t), (t.purposes || []).join(", ") || "목적 없음"].filter(Boolean).join(" · ");
+  const whyText = (parts) => {
+    const byTag = {};
+    parts.forEach(p => { byTag[p.tag] = byTag[p.tag] || { v: 0, up: new Set(), down: new Set() }; byTag[p.tag].v += p.v; (p.v > 0 ? byTag[p.tag].up : byTag[p.tag].down).add(p.src); });
+    Object.values(byTag).forEach(x => { x.srcs = x.v > 0 ? x.up : x.down; }); // 순가중치와 같은 방향 출처만
+    const e = Object.entries(byTag).sort((a, b) => b[1].v - a[1].v);
+    const pos = e.filter(([, x]) => x.v > 0).slice(0, 3).map(([t, x]) => `<b>${h(t)}</b> +${x.v} <span class="muted">(${h([...x.srcs].join(", "))})</span>`);
+    const neg = e.filter(([, x]) => x.v < 0).slice(-2).map(([t, x]) => `<b>${h(t)}</b> ${x.v} <span class="muted">(${h([...x.srcs].join(", "))})</span>`);
+    let out = "";
+    if (pos.length) out += `맞음: ${pos.join(" · ")}`;
+    if (neg.length) out += `${out ? "<br>" : ""}어긋남: ${neg.join(" · ")}`;
+    return out || '<span class="muted">근거 없음 — 멤버 취향 정보가 아직 없음</span>';
+  };
+  // ── "이 숙소가 왜 이번 여행에 맞는가" — 점수 근거(parts)를 사람이 읽는 문장으로 ──
+  const joinTags = (arr) => arr.map(t => `<b>${h(t)}</b>`).join("·");
+  const hasBatchim = (w) => { const c = (w || "").replace(/<[^>]+>/g, "").trim().slice(-1).charCodeAt(0); return c >= 0xAC00 && c <= 0xD7A3 && (c - 0xAC00) % 28 !== 0; };
+  const pj = (w, a, b) => (hasBatchim(w) ? a : b);                 // 조사만: pj("실속","이","가") → "이"
+  const josa = (w, a, b) => w + pj(w, a, b);                        // 단어+조사: josa("지민","이","가") → 지민이
+  const lastWord = (arr) => arr[arr.length - 1];
+  const whyTrip = (x, b) => {
+    const t = b.trip, s = x.stay, lines = [];
+    const byMember = {};                       // uid → {base:[], past:[], learn:[], neg:[]}
+    const ctxTags = [];
+    const likeParts = x.parts.filter(p => p.kind === "like");
+    for (const p of x.parts) {
+      if (p.kind === "like") continue;
+      if (p.kind === "ctx") { if (p.v > 0) ctxTags.push([p.tag, p.v]); continue; }
+      const name = p.src.split("·")[0];
+      const m = t.members.find(z => z.name === name); if (!m) continue;
+      const g = byMember[m.id] = byMember[m.id] || { name, base: [], past: [], learn: [], neg: [] };
+      if (p.v < 0) g.neg.push([p.tag, p.v]); else g[p.kind].push([p.tag, p.v]);
+    }
+    const top = (arr, n = 3, min = 2) => [...new Map(arr.filter(([, v]) => v >= min).sort((a, c) => c[1] - a[1])).keys()].slice(0, n);
+    // 1) 멤버 취향과 맞는 것
+    for (const g of Object.values(byMember)) {
+      const base = top(g.base); if (base.length) lines.push(["ok", `${josa(h(g.name), "이", "가")} 중요하게 보는 ${joinTags(base)}${pj(lastWord(base), "이", "가")} 있어요`]);
+    }
+    // 2) 여행 목적·동행
+    const ctxTop = top(ctxTags, 3, 1); if (ctxTop.length) lines.push(["ok", `${h([t.companions, ...(t.purposes || [])].join("·"))} 여행에 필요한 ${joinTags(ctxTop)}`]);
+    // 3) 이번 선별·이전 여행에서 배운 것
+    for (const g of Object.values(byMember)) {
+      const learn = top(g.learn, 2); if (learn.length) lines.push(["ok", `이번 선별에서 ${josa(h(g.name), "이", "가")} 남긴 숙소와 같은 ${joinTags(learn)}`]);
+      const past = top(g.past, 2); if (past.length) lines.push(["ok", `${josa(h(g.name), "이", "가")} 지난 ${h(t.companions)} 여행에서 좋아한 ${joinTags(past)}`]);
+    }
+    // 3.5) 좋아요
+    for (const p of likeParts) lines.push(["ok", `♥ ${josa(h(p.src.split("·")[0]), "이", "가")} 좋아요를 눌렀어요 <b>+${p.v}</b>`]);
+    // 4) 리뷰 근거: 맞는 태그 중 리뷰에서도 언급된 것
+    const matched = new Set(x.parts.filter(p => p.v > 0).map(p => p.tag));
+    const ev = (s.review_keywords || []).filter(k => k.polarity !== "-" && (matched.has(k.tag) || matched.has(k.keyword)));
+    if (ev.length) lines.push(["ev", `리뷰에서도 ${ev.map(k => `${h(k.keyword)} ${k.count}건`).join(" · ")} 언급`]);
+    else if ((s.review_keywords || []).length) lines.push(["ev", `리뷰에서 자주 나온 말: ${(s.review_keywords).slice(0, 3).map(k => h(k.keyword)).join(" · ")}`]);
+    // 5) 안 맞는 것: 학습된 부정 + 멤버가 원하는데 없는 상위 취향
+    for (const g of Object.values(byMember)) {
+      const neg = [...new Map(g.neg.filter(([, v]) => v <= -2).sort((a, c) => a[1] - c[1])).keys()].slice(0, 2);
+      if (neg.length) lines.push(["no", `${josa(h(g.name), "이", "가")} 이번에 피한 ${joinTags(neg)} 특징이 있어요`]);
+    }
+    for (const m of t.members) {
+      const prof = b.member_profiles?.[m.id] || {};
+      const want = Object.entries(prof).filter(([tag, w]) => w >= 3 && !s.tags.includes(tag)).sort((a, c) => c[1] - a[1]).slice(0, 2).map(([tag]) => tag);
+      if (want.length) lines.push(["no", `${josa(h(dn(m)), "이", "가")} 원하는 ${joinTags(want)}${pj(lastWord(want), "은", "는")} 없어요`]);
+    }
+    if (!lines.length) return '<div class="muted">아직 근거가 없어요. 멤버 취향 테스트나 선별이 쌓이면 이유가 생깁니다.</div>';
+    const oks = lines.filter(l => l[0] === "ok").length;
+    const lead = oks >= 3 ? "이번 여행에 잘 맞아요" : oks >= 1 ? "이번 여행에 맞는 점이 있어요" : "이번 여행과는 잘 안 맞아요";
+    return `<div class="lead">${lead}</div>` + lines.map(([k, txt]) => `<div class="rl ${k}"><span class="m">${k === "ok" ? "✓" : k === "no" ? "✕" : "·"}</span><span>${txt}</span></div>`).join("");
+  };
+  const stayCard = (x, b, extra = "") => `<div class="card ${x.dropped ? "dropped" : ""}">
+      <div class="top"><span class="name">${h(x.stay.name)}</span><span class="score" title="멤버 취향 + 여행 컨텍스트 + 선별 학습의 합">${x.total >= 0 ? "+" : ""}${x.total}</span></div>
+      <div class="muted">${h(x.stay.region)} · 최대 ${x.stay.capacity}인 · ${price(x.stay.price_tier)}${x.stay.rating ? ` · ★${x.stay.rating} (리뷰 ${x.stay.review_count.toLocaleString()})` : ""}${x.stay.source_url ? ` · <a href="${h(x.stay.source_url)}" target="_blank" rel="noopener" style="color:inherit">야놀자</a>` : ""}</div>
+      <div class="why">${whyTrip(x, b)}</div>
+      <details style="margin-top:6px"><summary style="font-size:12px">특징 태그 · 계산 근거</summary>
+        <div class="chips tags-sm" style="margin-top:4px">${chips(x.stay.tags)}</div>
+        <div class="muted" style="font-size:12px;margin-top:4px">${whyText(x.parts)}</div></details>${extra}</div>`;
+
+  // ---------- views ----------
+  const renderHeader = () => {
+    const sel = document.getElementById("userSel");
+    sel.innerHTML = USERS.length ? USERS.map(u => `<option value="${u.id}" ${u.id === cur()?.id ? "selected" : ""}>${h(dn(u))}${u.joined_at ? "" : " (게스트)"}</option>`).join("") : '<option value="">멤버 없음</option>';
+  };
+
+  const render = async () => {
+    const m = document.getElementById("main");
+    try {
+      USERS = await api("/users");
+      if (INVITE) { renderInvite(m); return; }
+      if (!user(ui.currentUserId)) ui.currentUserId = USERS[0]?.id || null;
+      renderHeader();
+      if (!USERS.length) { m.innerHTML = `<section class="panel"><h2>시작하기</h2><p>오른쪽 위 <b>멤버 추가</b>로 멤버를 만들고, 각자 자기 취향 테스트에 답하세요. 취향은 본인이 직접 입력합니다.</p></section>`; return; }
+      if (ui.view === "board" && ui.currentTripId) {
+        try { await renderBoard(m); }
+        catch (e) {
+          if (/404/.test(e.message)) { ui.view = "trips"; ui.currentTripId = null; save(); await renderTrips(m); }   // DB 초기화 등으로 여행이 사라진 경우
+          else throw e;
+        }
+      } else await renderTrips(m);
+    } catch (e) { m.innerHTML = `<div class="err">${h(e.message)} <button id="errBack">여행 목록으로</button></div>`; m.querySelector("#errBack").onclick = () => { ui.view = "trips"; ui.currentTripId = null; save(); render(); }; }
+  };
+
+  const renderTrips = async (m) => {
+    const u = cur();
+    const [prof, allTrips] = await Promise.all([api(`/users/${u.id}/profile`), api("/trips")]);
+    const trips = allTrips.filter(t => t.members.some(x => x.id === u.id)).sort((a, b) => String(b.created_at).localeCompare(String(a.created_at)));   // 내가 멤버인 여행만, 최신순
+    const ctxs = Object.entries(prof.profiles).filter(([k]) => k !== "base" && Object.keys(prof.profiles[k]).length);
+    m.innerHTML = `
+      <section class="panel">
+        <h2>${h(dn(u))}의 취향 <span class="muted">(taste_profiles · 해석기 ${h(prof.interpreters.join("+"))})</span></h2>
+        <h3>base — 취향 테스트에서</h3><div class="chips">${kwChips(prof.profiles.base)}</div>
+        ${ctxs.map(([k, w]) => `<h3>${h(k)} 여행에서 학습 <span class="muted" style="font-weight:400">· 유지/탈락·좋아요·한 줄에서. 2 이상만 표시</span></h3><div class="chips">${kwChips(w, 8, 2)}</div>`).join("")}
+        <div class="row" style="margin-top:8px"><button id="requiz">테스트 다시 하기</button><button id="renick">${u.joined_at ? "닉네임 바꾸기" : "가입하고 취향 저장하기"}</button>${u.joined_at ? "" : '<span class="muted">지금은 게스트. 가입하면 취향이 계정에 남습니다.</span>'}</div>
+      </section>
+      <section class="panel">
+        <h2>새 여행 만들기</h2>
+        <form id="tripForm">
+          <label class="f"><span>이름</span><input type="text" name="name" placeholder="예: 11월 강원" required></label>
+          <label class="f"><span>누구와</span><select name="companions">${META.companions.map(c => `<option>${h(c)}</option>`).join("")}</select></label>
+          <label class="f"><span>인원</span><input type="number" name="people" min="1" max="8" value="2"></label>
+          <label class="f"><span>지역</span><select name="region">${META.regions.map(r => `<option>${h(r)}</option>`).join("")}</select>
+            <input type="text" name="location" placeholder="세부 장소 (선택) 예: 해운대" style="margin-left:8px;width:220px"></label>
+          <label class="f"><span>날짜</span><input type="date" name="start_date" id="startDate"> <span class="muted">~</span> <input type="date" name="end_date" id="endDate"> <span class="muted" style="font-size:12px">선택</span></label>
+          <div class="f"><span class="muted" style="display:inline-block;min-width:72px">목적</span><span class="chips" id="purposeChips">${META.purposes.map(p => `<span class="chip opt" data-p="${h(p)}">${h(p)}</span>`).join("")}</span></div>
+          <div class="f"><span class="muted" style="display:inline-block;min-width:72px">멤버</span>${USERS.map(x => `<label style="margin-right:10px"><input type="checkbox" name="m" value="${x.id}" ${x.id === u.id ? "checked" : ""}> ${h(dn(x))}</label>`).join("")}</div>
+          <button class="primary" type="submit">만들기 → 컨텍스트로 후보 5개 미리 추천</button>
+        </form>
+      </section>
+      <section class="panel">
+        <h2>여행 <span class="muted">최신순</span></h2>
+        ${trips.length ? trips.map(t => `
+          <div class="card"><div class="top"><span class="name">${h(t.name)}</span>
+            <span class="muted">${h(tripMeta(t))}</span></div>
+            <div class="muted">멤버: ${h(t.members.map(dn).join(", "))} (${t.members.length}/${t.people}명) · 후보 ${t.candidate_count}개${t.chosen_stay_id ? ' · <span style="color:var(--acc)">✔ 숙소 결정됨</span>' : ""}${t.members.length < t.people ? ' · <span style="color:var(--acc)">친구를 초대해보세요 → 보드에서 링크 공유</span>' : ""}</div>
+            <div class="row" style="margin-top:10px"><button class="primary openTrip" data-id="${t.id}">보드 열기</button><button class="delTrip" data-id="${t.id}" data-armed="0">삭제</button></div></div>`).join("") : '<div class="empty">참여 중인 여행이 없습니다. 아래에서 만들거나, 초대 링크로 합류하세요.</div>'}
+      </section>`;
+    m.querySelectorAll(".openTrip").forEach(b => b.onclick = () => { ui.currentTripId = +b.dataset.id; ui.view = "board"; save(); render(); });
+    m.querySelectorAll(".delTrip").forEach(b => b.onclick = () => armDelete(b, +b.dataset.id, u));
+    m.querySelector("#requiz").onclick = () => openQuiz(u);
+    m.querySelector("#renick").onclick = () => openSignup(u);
+    const selP = new Set();
+    m.querySelectorAll("#purposeChips .chip").forEach(c => c.onclick = () => { const p = c.dataset.p; selP.has(p) ? selP.delete(p) : selP.add(p); c.classList.toggle("sel", selP.has(p)); c.classList.toggle("opt", !selP.has(p)); });
+    // 제목에 지역명이 있으면 지역·세부 장소 자동 세팅 (직접 바꾼 뒤엔 덮어쓰지 않음)
+    const nameIn = m.querySelector('#tripForm input[name="name"]'), regionSel = m.querySelector('#tripForm select[name="region"]'), locIn = m.querySelector('#tripForm input[name="location"]');
+    let touched = { region: false, loc: false };
+    regionSel.addEventListener("change", () => { touched.region = true; });
+    locIn.addEventListener("input", () => { touched.loc = !!locIn.value; });
+    nameIn.addEventListener("input", () => {
+      const g = guessPlace(nameIn.value); if (!g) return;
+      if (!touched.region && [...regionSel.options].some(o => o.value === g.region)) regionSel.value = g.region;
+      if (!touched.loc) locIn.value = g.loc;
+    });
+    const sd = m.querySelector("#startDate"), ed = m.querySelector("#endDate");
+    sd.onchange = () => { ed.min = sd.value; if (ed.value && ed.value < sd.value) ed.value = ""; };
+    m.querySelector("#tripForm").onsubmit = async (e) => {
+      e.preventDefault(); const f = new FormData(e.target);
+      const r = await api("/trips", { method: "POST", body: { name: f.get("name"), companions: f.get("companions"), people: +f.get("people") || 1, region: f.get("region"),
+        location: f.get("location") || null, start_date: f.get("start_date") || null, end_date: f.get("end_date") || null,
+        purposes: [...selP], member_ids: f.getAll("m").map(Number), created_by: u.id } });
+      ui.currentTripId = r.id; ui.view = "board"; save(); render();
+    };
+  };
+
+  const visitedLine = (x) => { if (!(x.visited || []).length) return ""; const v = x.visited; const names = [...new Set(v.map(z => z.user_name))];
+    const when = v[0].start_date ? `${v[0].start_date.slice(0, 4)}년 ${+v[0].start_date.slice(5, 7)}월` : ""; return `🏠 ${h(names.join("·"))}${pj(names[names.length - 1], "이", "가")} 묵은 곳 · ${h(v[0].trip_name)}${when ? ` (${h(when)})` : ""}`; };
+  const inviteUrl = (tripId) => `${location.origin}${location.pathname.replace(/[^/]*$/, "")}index.html?invite${tripId ? `&trip=${tripId}` : ""}`;
+  const copyText = async (txt) => { try { await navigator.clipboard.writeText(txt); return true; } catch { return false; } };
+
+  // 여행 삭제: 첫 클릭은 확인 상태로 바꾸고, 3초 안에 다시 누르면 삭제 (브라우저 확인창 대신)
+  const armDelete = async (btn, tripId, u) => {
+    if (btn.dataset.armed !== "1") {
+      btn.dataset.armed = "1"; btn.textContent = "정말 삭제할까요? 다시 누르면 삭제"; btn.classList.add("danger");
+      setTimeout(() => { if (btn.isConnected) { btn.dataset.armed = "0"; btn.textContent = "삭제"; btn.classList.remove("danger"); } }, 3000);
+      return;
+    }
+    await api(`/trips/${tripId}?user_id=${u.id}`, { method: "DELETE" });
+    if (ui.currentTripId === tripId) { ui.currentTripId = null; ui.view = "trips"; }
+    save(); render();
+  };
+
+  // ── 보드: 왼쪽 목록 · 가운데 지도 · 오른쪽 상세 ──
+  const REGION_CENTER = { "서울": [37.5665, 126.978, 12], "부산": [35.1796, 129.0756, 11], "강원": [38.0, 128.5, 9], "경기·인천": [37.4, 126.75, 10], "제주": [33.4, 126.55, 10], "충남": [36.8, 127.0, 9],
+    "대구": [35.87, 128.6, 12], "대전": [36.35, 127.38, 12], "광주": [35.16, 126.85, 12], "전남": [34.76, 127.66, 10], "경북": [35.84, 129.21, 11], "울산": [35.54, 129.31, 11] };
+  // 여행 제목에서 지역·장소 유추: 키워드 → [지역, 세부 장소]
+  const PLACE_HINTS = [
+    ["강남", "서울", "강남"], ["홍대", "서울", "홍대"], ["명동", "서울", "명동"], ["종로", "서울", "종로"], ["잠실", "서울", "잠실"], ["이태원", "서울", "이태원"], ["익선", "서울", "익선동"], ["서울", "서울", ""],
+    ["해운대", "부산", "해운대"], ["광안리", "부산", "광안리"], ["서면", "부산", "서면"], ["기장", "부산", "기장"], ["남포", "부산", "남포동"], ["부산", "부산", ""],
+    ["속초", "강원", "속초"], ["강릉", "강원", "강릉"], ["양양", "강원", "양양"], ["춘천", "강원", "춘천"], ["평창", "강원", "평창"], ["강원", "강원", ""],
+    ["서귀포", "제주", "서귀포"], ["애월", "제주", "애월"], ["제주", "제주", ""],
+    ["송도", "경기·인천", "송도"], ["인천", "경기·인천", "인천"], ["수원", "경기·인천", "수원"], ["시흥", "경기·인천", "시흥"], ["동탄", "경기·인천", "동탄"], ["가평", "경기·인천", "가평"], ["경기", "경기·인천", ""],
+    ["여수", "전남", "여수"], ["순천", "전남", "순천"], ["경주", "경북", "경주"], ["포항", "경북", "포항"], ["대구", "대구", ""], ["대전", "대전", ""], ["광주", "광주", ""], ["당진", "충남", "당진"], ["천안", "충남", "천안"], ["울산", "울산", ""],
+  ];
+  const guessPlace = (title) => { for (const [kw, region, loc] of PLACE_HINTS) if (title.includes(kw)) return { region, loc }; return null; };
+  let board = { tripId: null, sel: null, view: null };   // 선택 숙소와 지도 시점은 다시 그려도 유지
+  // 추천 등급 5단계: 그 여행의 최고점 대비 비율. 강력추천일수록 크고 진하게.
+  const TIERS = [
+    { key: "top",  label: "강력추천", min: 0.8,  color: "#c8102e", radius: 15 },
+    { key: "good", label: "추천",     min: 0.55, color: "#f0761f", radius: 12 },
+    { key: "mid",  label: "중간",     min: 0.3,  color: "#e6b800", radius: 10 },
+    { key: "low",  label: "비추천",   min: 0,    color: "#9fb1c4", radius: 8 },
+    { key: "bad",  label: "매우비추천", min: -Infinity, color: "#c9ccc8", radius: 6 },
+  ];
+  const tierOf = (total, maxT) => { const r = maxT > 0 ? total / maxT : 0; return TIERS.find(tt => (total < 0 ? -1 : r) >= tt.min) || TIERS[TIERS.length - 1]; };
+  const tierBadge = (tt) => `<span class="tier" style="background:${tt.color}">${tt.label}</span>`;
+
+  const linkify = (txt) => h(txt).replace(/(https?:\/\/[^\s<]+)/g, (u) => `<a href="${u}" target="_blank" rel="noopener">${u.length > 48 ? u.slice(0, 48) + "…" : u}</a>`);
+  const previewCard = (l) => `<a class="lp" href="${h(l.url)}" target="_blank" rel="noopener">
+      ${l.image ? `<img src="${h(l.image)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+      <div class="lpb"><div class="lpt">${h(l.title || l.url)}</div>${l.description ? `<div class="lpd">${h(l.description)}</div>` : ""}<div class="lps">${h(l.site || "")}${l.error ? " · 미리보기를 못 읽었어요" : ""}</div></div></a>`;
+  const loadComments = async (t, sid, detail) => {
+    const box = detail.querySelector("#cmtList"); if (!box) return;
+    const cs = await api(`/trips/${t.id}/comments?stay_id=${encodeURIComponent(sid)}`);
+    detail.querySelector("#cmtCount").textContent = cs.length ? cs.length : "";
+    box.innerHTML = cs.length ? cs.map(c => `<div class="cmt"><div class="cmth"><b>${h(c.user_name)}</b> <span class="muted">${h(String(c.created_at).replace("T", " ").slice(5, 16))}</span></div>
+        <div class="cmtt">${linkify(c.text)}</div>${(c.links || []).map(previewCard).join("")}</div>`).join("")
+      : '<div class="muted" style="font-size:12.5px">아직 댓글이 없어요. 가본 사람 후기, 근처 맛집 링크, 이동 계획 같은 걸 남겨 보세요.</div>';
+  };
+
+  const renderBoard = async (m) => {
+    const u = cur();
+    const b = await api(`/trips/${ui.currentTripId}`);
+    const t = b.trip, isMember = t.members.some(x => x.id === u.id);
+    if (board.tripId !== t.id) board = { tripId: t.id, sel: null, view: null };
+    const cands = b.candidates.map(x => ({ ...x, isCand: true })), more = b.more.map(x => ({ ...x, isCand: false }));
+    const others = (b.others || []).map(x => ({ ...x, isCand: false, out: true }));
+    const all = [...cands, ...more, ...others];
+    const alive = cands.filter(x => !x.dropped), dropped = cands.filter(x => x.dropped);
+    const byId = Object.fromEntries(all.map(x => [x.stay.id, x]));
+    if (board.sel && !byId[board.sel]) board.sel = null;
+
+    const maxT = Math.max(0, ...[...cands, ...more].map(x => x.total));   // 등급 기준은 조건에 맞는 숙소끼리
+    const lead = (x) => { const w = whyTrip(x, b); const mm = w.match(/<div class="lead">(.*?)<\/div>/); return mm ? mm[1] : ""; };
+    const item = (x) => `<div class="li ${board.sel === x.stay.id ? "sel" : ""} ${x.dropped ? "dropped" : ""}" data-sid="${x.stay.id}">
+        <div class="top"><span class="name">${tierBadge(tierOf(x.total, maxT))} ${h(x.stay.name)}${x.stay.is_handys ? ' <span class="hb">핸디즈</span>' : ""}</span><span class="score">${x.total >= 0 ? "+" : ""}${x.total}</span></div>
+        <div class="muted" style="font-size:12px">${h(x.stay.region)} · 최대 ${x.stay.capacity}인 · ${price(x.stay.price_tier)}${x.stay.rating ? ` · ★${x.stay.rating}` : ""}</div>
+        <div class="lead-sm">${x.dropped ? "탈락됨" : x.out ? `<span class="muted">조건 밖 · ${h(x.out_reason)}</span>` : lead(x)}</div>
+        ${(x.likes || []).length ? `<div class="likeline">♥ ${h(x.likes.map(l => l.user_name).join(", "))}${pj(x.likes[x.likes.length - 1].user_name, "이", "가")} 좋아하는 숙소예요!</div>` : ""}
+        ${visitedLine(x) ? `<div class="visitline">${visitedLine(x)}</div>` : ""}
+        ${t.chosen_stay_id === x.stay.id ? `<div class="chosenline">✔ 이 여행의 결정 숙소</div>` : ""}</div>`;
+
+    m.innerHTML = `
+      <section class="panel bhead">
+        <div class="row" style="justify-content:space-between">
+          <div><h2 style="margin:0">${h(t.name)}</h2><span class="muted">${h(tripMeta(t))} · 멤버 ${h(t.members.map(x => x.name).join(", "))} (${t.members.length}/${t.people}명)${t.chosen_stay_id && byId[t.chosen_stay_id] ? ` · <b style="color:var(--acc)">✔ ${h(byId[t.chosen_stay_id].stay.name)} 로 결정</b>` : ""}</span></div>
+          <div class="row"><button id="nextTrip">이 멤버로 다음 여행 만들기</button><button id="back">여행 목록</button>${isMember ? `<button id="delTrip" data-armed="0">삭제</button>` : ""}</div>
+        </div>
+        ${t.members.length < t.people ? `<div class="invite">
+          <div><b>${t.people}명 중 ${t.members.length}명만 참여 중이에요.</b> 링크를 공유해서 친구를 초대해보세요! 친구가 취향 테스트를 마치면 이 여행에 바로 들어옵니다.</div>
+          <div class="row" style="margin-top:8px"><code id="inviteUrl">${h(inviteUrl(t.id))}</code><button class="primary" id="inviteCopy">링크 복사</button></div>
+        </div>` : ""}
+      </section>
+      <div class="board">
+        <aside class="col list">
+          <h3>후보 <span class="muted">${alive.length}</span></h3>
+          ${alive.length ? alive.map(item).join("") : '<div class="empty">남은 후보가 없어요</div>'}
+          ${dropped.length ? `<details><summary>탈락 ${dropped.length}</summary>${dropped.map(item).join("")}</details>` : ""}
+          <h3 style="margin-top:18px">더 담을 수 있는 숙소 <span class="muted">${more.length}</span></h3>
+          ${more.length ? more.map(item).join("") : '<div class="empty">조건(지역·인원)에 맞는 숙소를 모두 담았어요</div>'}
+          ${others.length ? `<details style="margin-top:14px"><summary>이번 여행 조건 밖 <span class="muted">${others.length} · 다른 지역이거나 인원 초과. 지도를 축소하면 보여요</span></summary>${others.map(item).join("")}</details>` : ""}
+        </aside>
+        <div class="col mapcol"><div id="map"></div>
+          <div class="maplegend">${TIERS.map(tt => `<span><i style="background:${tt.color};width:${6 + tt.radius / 2}px;height:${6 + tt.radius / 2}px"></i>${tt.label}</span>`).join("")}<span><i style="background:#fff;border:2.5px solid #1b1b1b"></i>테두리 진함 = 후보</span><span><i style="background:#c8102e;opacity:.35"></i>반투명 = 탈락</span><span><i style="background:#e6b800;opacity:.5;border:1.5px dashed #5c625e"></i>점선 = 이번 여행 조건 밖</span></div></div>
+        <aside class="col detail" id="detail"></aside>
+      </div>`;
+
+    m.querySelector("#back").onclick = () => { ui.view = "trips"; save(); render(); };
+    m.querySelector("#inviteCopy")?.addEventListener("click", async (e) => { const ok = await copyText(inviteUrl(t.id)); e.currentTarget.textContent = ok ? "복사됨" : "복사 실패 — 링크를 직접 선택하세요"; setTimeout(() => { if (e.currentTarget?.isConnected) e.currentTarget.textContent = "링크 복사"; }, 2000); });
+    m.querySelector("#delTrip")?.addEventListener("click", (e) => armDelete(e.currentTarget, t.id, u));
+    m.querySelector("#nextTrip").onclick = async () => { const r = await api(`/trips/${t.id}/next`, { method: "POST", body: { created_by: u.id } }); ui.currentTripId = r.id; save(); render(); };
+
+    // ── 지도 ──
+    const markers = {};
+    let map = null;
+    if (window.L) {
+      map = L.map("map", { scrollWheelZoom: true });
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: "© OpenStreetMap" }).addTo(map);
+      const withPos = all.filter(x => x.stay.lat && x.stay.lng);
+      const loc = (t.location || "").trim();
+      const hit = loc && withPos.find(x => (x.stay.name + " " + (x.stay.address || "")).includes(loc));
+      if (board.view) map.setView(board.view.center, board.view.zoom);
+      else if (hit) map.setView([hit.stay.lat, hit.stay.lng], 13);
+      else if (REGION_CENTER[t.region]) { const [la, ln, z] = REGION_CENTER[t.region]; map.setView([la, ln], z); }
+      else if (withPos.length) map.fitBounds(withPos.map(x => [x.stay.lat, x.stay.lng]), { padding: [30, 30] });
+      else map.setView([36.5, 127.8], 7);
+      map.on("moveend", () => { board.view = { center: map.getCenter(), zoom: map.getZoom() }; });
+      // 강력추천이 위에 그려지도록 낮은 등급부터
+      for (const x of [...withPos].sort((a, c) => a.total - c.total)) {
+        const s = x.stay, tt = tierOf(x.total, maxT), radius = tt.radius;
+        const mk = L.circleMarker([s.lat, s.lng], { radius: x.out ? Math.max(6, radius - 2) : radius, color: x.out ? "#5c625e" : (x.isCand ? "#1b1b1b" : "#ffffff"), fillColor: tt.color,
+          dashArray: x.out ? "3,3" : null, fillOpacity: x.dropped ? .35 : x.out ? .5 : (board.sel === s.id ? 1 : .92), weight: board.sel === s.id ? 4 : (x.isCand ? 2.5 : 1.5), opacity: x.dropped ? .5 : 1 }).addTo(map);
+        mk.bindTooltip(`${tt.label} · ${s.name} ${x.total >= 0 ? "+" : ""}${x.total}${x.dropped ? " (탈락)" : ""}${x.out ? " · 조건 밖: " + x.out_reason : ""}`, { direction: "top", offset: [0, -radius] });
+        mk.on("click", () => select(s.id, false));
+        markers[s.id] = mk;
+      }
+      if (!board.sel && hit) board.sel = hit.stay.id;
+      setTimeout(() => map.invalidateSize(), 50);
+    } else {
+      m.querySelector("#map").innerHTML = '<div class="empty" style="padding:20px">지도 라이브러리를 불러오지 못했습니다 (인터넷 연결 필요). 목록에서 골라 주세요.</div>';
+    }
+
+    // ── 오른쪽 상세 ──
+    const detail = m.querySelector("#detail");
+    const renderDetail = () => {
+      const x = board.sel ? byId[board.sel] : null;
+      if (!x) {
+        detail.innerHTML = `<h3>이번 여행</h3>
+          <div class="muted" style="font-size:13px;margin-bottom:8px">${h(tripMeta(t))}</div>
+          <h3>여행 컨텍스트가 미는 것</h3><div class="chips">${kwChips(b.ctx_keywords)}</div>
+          <h3 style="margin-top:12px">이 여행이 추구하는 키워드 <span class="muted">(선별에서 학습 · 2 이상만)</span></h3><div class="chips">${kwChips(b.keywords.trip, 6, 2)}</div>
+          ${t.members.map(mm => { const k = topKeywords(b.keywords.members[mm.id] || {}, 3, 2); return (k.pos.length || k.neg.length) ? `<div class="muted" style="font-size:12px;margin-top:4px">${h(mm.name)}: ${k.pos.map(([a, c]) => a + " +" + c).concat(k.neg.map(([a, c]) => a + " " + c)).join(", ")}</div>` : ""; }).join("")}
+          <p class="muted" style="margin-top:16px;font-size:13px">목록이나 지도의 핀을 누르면 그 숙소가 이번 여행에 맞는 이유가 여기 나옵니다.</p>`;
+        return;
+      }
+      const s = x.stay, my = x.votes.find(v => v.user_id === u.id), myLike = (x.likes || []).some(l => l.user_id === u.id);
+      const votes = x.votes.map(v => `${h(v.user_name)}: ${v.kind === "keep" ? "유지" : "탈락"}${v.reason_text ? " · " + h(v.reason_text) : ""}${v.note ? " · “" + h(v.note) + "”" : ""}${(v.note_tags || []).length ? ` <span class="muted">→ 한 줄 해석: ${v.note_tags.map(([tg, w]) => `${h(tg)} ${w > 0 ? "+" : ""}${w}`).join(", ")}</span>` : (v.note ? ' <span class="muted">→ 사전에 맞는 표현 없음</span>' : "")}`);
+      detail.innerHTML = `
+        <div class="top"><span class="name" style="font-size:16px">${tierBadge(tierOf(x.total, maxT))} ${h(s.name)}${s.is_handys ? ' <span class="hb">핸디즈</span>' : ""}</span><span class="score">${x.total >= 0 ? "+" : ""}${x.total}</span></div>
+        <div class="muted" style="font-size:13px">${h(s.brand || "")} · ${h(s.region)} · 최대 ${s.capacity}인 · ${price(s.price_tier)}${s.rating ? ` · ★${s.rating} (리뷰 ${s.review_count.toLocaleString()})` : ""}${s.source_url ? ` · <a href="${h(s.source_url)}" target="_blank" rel="noopener" style="color:inherit">야놀자</a>` : ""}</div>
+        ${s.address ? `<div class="muted" style="font-size:12px">${h(s.address)}</div>` : ""}
+        ${x.out ? `<div class="note-out">이번 여행 조건 밖 — ${h(x.out_reason)}. 그래도 담을 수는 있어요.</div>` : ""}
+        <div class="why" style="margin-top:10px">${whyTrip(x, b)}</div>
+        ${(s.review_keywords || []).length ? `<h3 style="margin-top:12px">리뷰에서 자주 나온 말</h3><div class="chips">${s.review_keywords.map(k => `<span class="chip ${k.polarity === "-" ? "neg" : ""}">${h(k.keyword)} ${k.count}</span>`).join("")}</div>` : ""}
+        <details style="margin-top:8px"><summary style="font-size:12px">특징 태그 · 계산 근거</summary>
+          <div class="chips tags-sm" style="margin-top:6px">${(() => { const net = {}; x.parts.forEach(p => { net[p.tag] = (net[p.tag] || 0) + p.v; });
+            return s.tags.map(tg => { const v = net[tg] || 0; const cls = v > 0 ? "hit" : v < 0 ? "miss" : ""; return `<span class="chip ${cls}" title="${v ? (v > 0 ? "이번 여행 취향과 맞음 " : "취향과 어긋남 ") + (v > 0 ? "+" : "") + v : "이번 여행 점수에 영향 없음"}">${h(tg)}${v ? ` <b>${v > 0 ? "+" : ""}${v}</b>` : ""}</span>`; }).join(""); })()}</div>
+          <div class="muted" style="font-size:11.5px;margin-top:4px">진한 초록 = 이번 여행 취향·목적과 겹치는 특징, 빨강 = 어긋나는 특징, 회색 = 점수에 영향 없음</div>
+          <div class="muted" style="font-size:12px;margin-top:6px">${whyText(x.parts)}</div></details>
+        ${votes.length ? `<div class="votes" style="margin-top:10px">${votes.join("<br>")}</div>` : ""}
+        ${visitedLine(x) ? `<div class="visitline" style="margin-top:8px">${visitedLine(x)}</div>` : ""}
+        ${(x.likes || []).length ? `<div class="likeline" style="margin-top:8px">♥ ${h(x.likes.map(l => l.user_name).join(", "))}${pj(x.likes[x.likes.length - 1].user_name, "이", "가")} 좋아하는 숙소예요!</div>` : ""}
+        <div class="row" style="margin-top:12px">
+          ${isMember ? `<button class="like ${myLike ? "on" : ""}" title="좋아요는 유지 표보다 약한 취향 신호로도 쓰여요">${myLike ? "♥ 좋아요 취소" : "♡ 좋아요"}</button>` : ""}
+          ${isMember && x.isCand ? `<button class="decide ${t.chosen_stay_id === s.id ? "on" : ""}" title="결정하면 다음 여행에서 '묵었던 곳'으로 표시돼요">${t.chosen_stay_id === s.id ? "✔ 결정됨 · 취소" : "이 숙소로 결정"}</button>` : ""}
+          ${x.isCand ? (isMember ? `<button class="vote ${my?.kind === "keep" ? "primary" : ""}" data-v="keep">유지</button><button class="vote ${my?.kind === "drop" ? "primary" : ""}" data-v="drop">탈락</button>${my ? `<button class="unvote">내 표 취소</button>` : ""}` : '<span class="muted">이 여행의 멤버가 아니라 투표할 수 없음</span>')
+                   : `<button class="primary add">후보에 담기</button>`}
+        </div>
+        <h3 style="margin-top:16px">댓글 <span class="muted" id="cmtCount"></span></h3>
+        <div id="cmtList" class="cmts"><div class="muted" style="font-size:12.5px">불러오는 중…</div></div>
+        ${isMember ? `<form id="cmtForm" style="margin-top:8px"><textarea id="cmtText" rows="2" placeholder="자유롭게 남겨요. 근처 식당 지도 링크를 붙이면 미리보기가 뜹니다." style="width:100%;font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:7px;resize:vertical"></textarea>
+          <div class="row" style="margin-top:6px;justify-content:flex-end"><button class="primary" type="submit">남기기</button></div></form>` : ""}`;
+      loadComments(t, s.id, detail);
+      detail.querySelectorAll(".vote").forEach(el => el.onclick = () => openVote(t, u, x, el.dataset.v));
+      detail.querySelector(".decide")?.addEventListener("click", async () => {
+        await api(`/trips/${t.id}/decide`, { method: "POST", body: { user_id: u.id, stay_id: t.chosen_stay_id === s.id ? null : s.id } }); render();
+      });
+      detail.querySelector(".like")?.addEventListener("click", async () => {
+        if (myLike) await api(`/trips/${t.id}/likes?user_id=${u.id}&stay_id=${encodeURIComponent(s.id)}`, { method: "DELETE" });
+        else await api(`/trips/${t.id}/likes`, { method: "POST", body: { user_id: u.id, stay_id: s.id } });
+        render();
+      });
+      detail.querySelector("#cmtForm")?.addEventListener("submit", async (e) => {
+        e.preventDefault(); const ta = detail.querySelector("#cmtText"); const txt = ta.value.trim(); if (!txt) return;
+        const btn = e.target.querySelector("button"); btn.disabled = true; btn.textContent = "링크 확인 중…";
+        try { await api(`/trips/${t.id}/comments`, { method: "POST", body: { user_id: u.id, stay_id: s.id, text: txt } }); ta.value = ""; await loadComments(t, s.id, detail); }
+        finally { btn.disabled = false; btn.textContent = "남기기"; }
+      });
+      detail.querySelector(".unvote")?.addEventListener("click", async () => { await api(`/trips/${t.id}/votes?user_id=${u.id}&stay_id=${s.id}`, { method: "DELETE" }); render(); });
+      detail.querySelector(".add")?.addEventListener("click", async () => { await api(`/trips/${t.id}/candidates`, { method: "POST", body: { stay_id: s.id, user_id: u.id } }); render(); });
+    };
+    const select = (sid, pan = true) => {
+      board.sel = sid;
+      m.querySelectorAll(".li").forEach(el => el.classList.toggle("sel", el.dataset.sid === sid));
+      const li = m.querySelector(`.li[data-sid="${sid}"]`); li && li.scrollIntoView({ block: "nearest" });
+      for (const [id, mk] of Object.entries(markers)) { const xx = byId[id]; mk.setStyle({ weight: id === sid ? 4 : (xx.isCand ? 2.5 : 1.5), fillOpacity: xx.dropped ? .35 : xx.out ? .5 : (id === sid ? 1 : .92) }); if (id === sid) mk.bringToFront(); }
+      if (pan && map && markers[sid]) map.panTo(markers[sid].getLatLng());
+      renderDetail();
+    };
+    m.querySelectorAll(".li").forEach(el => el.onclick = () => select(el.dataset.sid));
+    renderDetail();
+  };
+
+  // ---------- modals ----------
+  const modal = (html) => { const r = document.getElementById("modalRoot"); r.innerHTML = `<div class="modal"><div class="box">${html}</div></div>`; return r; };
+  const closeModal = () => { document.getElementById("modalRoot").innerHTML = ""; };
+
+  const openQuiz = (u, isNew = false, after = null) => {
+    const r = modal(`<h2>${h(dn(u))}의 취향 테스트 <span class="muted">(1층 · events.quiz_answer)</span></h2>
+      <form id="quizForm" class="quiz">${META.quiz.map(qq => `<div class="q"><div class="t">${qq.ord}. ${h(qq.text)}</div><div class="opts">${qq.options.map(o => `<label class="opt"><input type="radio" name="q${h(qq.code)}" value="${h(o.code)}" required>${o.image ? `<img src="${h(o.image)}" alt="">` : '<div class="noimg">—</div>'}<div class="cap">${h(o.text)}</div></label>`).join("")}</div></div>`).join("")}
+      <div class="row" style="margin-top:12px"><button class="primary" type="submit">저장</button>${isNew ? "" : '<button type="button" id="cancel">취소</button>'}</div>
+      <div class="credit">사진: Wikimedia Commons, CC 라이선스 · 저작자 목록은 img/CREDITS.md</div></form>`);
+    r.querySelector(".box").classList.add("wide");
+    r.querySelector("#cancel")?.addEventListener("click", closeModal);
+    r.querySelector("#quizForm").onsubmit = async (e) => { e.preventDefault(); const f = new FormData(e.target);
+      await api(`/users/${u.id}/quiz`, { method: "POST", body: { answers: META.quiz.map(qq => f.get("q" + qq.code)) } }); closeModal(); after ? after() : render(); };
+  };
+
+  // ── 초대 링크 흐름: 이름 → 테스트 → 결과 + 가입 유도 ──
+  const renderInvite = (m) => {
+    document.querySelector("header label").hidden = true;
+    document.getElementById("addUserBtn").hidden = true;
+    document.getElementById("shareBtn").hidden = true;
+    m.innerHTML = `<section class="panel" style="max-width:560px;margin:24px auto">
+      <h2>취향 테스트</h2>
+      <p class="muted">숙소 고를 때 무엇을 중요하게 보는지 5문항. 이름만 적고 시작하세요. ${INVITE_TRIP ? "끝나면 함께 가는 여행에 합류합니다." : ""}</p>
+      <form id="inviteForm"><label class="f"><span>이름</span><input type="text" name="name" required placeholder="예: 지민" autofocus></label>
+      <button class="primary" type="submit">테스트 시작</button></form></section>`;
+    m.querySelector("#inviteForm").onsubmit = async (e) => {
+      e.preventDefault();
+      const nu = await api("/users", { method: "POST", body: { name: new FormData(e.target).get("name") } });
+      USERS.push(nu); ui.currentUserId = nu.id; save();
+      if (INVITE_TRIP) { try { await api(`/trips/${INVITE_TRIP}/members`, { method: "POST", body: { user_id: nu.id } }); } catch {} }
+      openQuiz(nu, true, async () => {
+        // 테스트 버전: 설문을 끝내면 바로 가입. 닉네임은 입력한 이름, 결과 화면에서 바꿀 수 있다.
+        Object.assign(nu, await api(`/users/${nu.id}/signup`, { method: "POST", body: { nickname: nu.name } }));
+        renderInviteResult(m, nu);
+      });
+    };
+  };
+  const renderInviteResult = async (m, u) => {
+    const prof = await api(`/users/${u.id}/profile`);
+    m.innerHTML = `<section class="panel" style="max-width:560px;margin:24px auto">
+      <h2>${h(dn(u))}님의 숙소 취향</h2>
+      <div class="chips" style="margin:8px 0 14px">${kwChips(prof.profiles.base, 8)}</div>
+      <p class="muted">가입됐습니다. 이 취향은 계정에 남아 다음 여행에서도 쓰입니다. 닉네임은 <b>${h(dn(u))}</b> 입니다.</p>
+      <div class="row" style="margin-top:12px"><button class="primary" id="goBtn">${INVITE_TRIP ? "여행 보드로 가기" : "시작하기"}</button><button id="nickBtn">닉네임 바꾸기</button></div></section>`;
+    m.querySelector("#goBtn").onclick = () => { if (INVITE_TRIP) { ui.currentTripId = INVITE_TRIP; ui.view = "board"; save(); } location.href = "index.html"; };
+    m.querySelector("#nickBtn").onclick = () => openSignup(u, () => renderInviteResult(m, u));
+  };
+  const openSignup = (u, after) => {
+    const joined = !!u.joined_at;
+    const r = modal(`<h2>${joined ? "닉네임 바꾸기" : "가입"}</h2>
+      <p class="muted">${joined ? "여행 보드와 근거 표시에 이 이름이 쓰입니다." : "테스트 때 적은 이름을 닉네임으로 쓰거나 바꿀 수 있습니다."}</p>
+      <form id="sf"><label class="f"><span>닉네임</span><input type="text" name="nickname" required maxlength="32" value="${h(dn(u))}" id="nickInput"></label>
+      <div class="row"><button class="primary" type="submit">${joined ? "저장" : "가입"}</button><button type="button" id="cancel">취소</button></div></form>`);
+    r.querySelector("#cancel").onclick = closeModal;
+    r.querySelector("#sf").onsubmit = async (e) => { e.preventDefault();
+      const nu = await api(`/users/${u.id}/signup`, { method: "POST", body: { nickname: new FormData(e.target).get("nickname") } });
+      Object.assign(u, nu); closeModal(); after ? after() : render(); };
+  };
+
+  const openAddUser = () => {
+    const r = modal(`<h2>멤버 추가</h2><form id="uf">
+      <label class="f"><span>이름</span><input type="text" name="name" required placeholder="예: 지민"></label>
+      <div class="row"><button class="primary" type="submit">다음: 취향 테스트</button><button type="button" id="cancel">취소</button></div></form>`);
+    r.querySelector("#cancel").onclick = closeModal;
+    r.querySelector("#uf").onsubmit = async (e) => { e.preventDefault(); const f = new FormData(e.target);
+      const nu = await api("/users", { method: "POST", body: { name: f.get("name") } });
+      USERS.push(nu); ui.currentUserId = nu.id; save(); renderHeader(); openQuiz(nu, true); };
+  };
+
+  const openVote = (t, u, cand, kind) => {
+    const rs = META.reasons.filter(x => x.vote_kind === kind), prev = cand.votes.find(v => v.user_id === u.id);
+    const r = modal(`<h2>${h(cand.stay.name)} — ${kind === "keep" ? "유지" : "탈락"}</h2>
+      <p class="muted">events.vote 로 저장 → rules-v1 이 선택지·숙소 태그를, notes-v1 이 한 줄을 태그 가중치로 번역 → trip_keywords·taste_profiles 재계산.</p>
+      <form id="vf">${rs.map(x => `<label style="display:block"><input type="radio" name="reason" value="${h(x.id)}" ${prev?.reason_id === x.id ? "checked" : ""} required> ${h(x.text)}</label>`).join("")}
+      <label class="f" style="margin-top:10px"><span>한 줄</span><input type="text" name="note" placeholder="선택. 예: 바다 보이는 게 좋았어 / 주방이 없어서 아쉬움" value="${h(prev?.note || "")}" style="width:70%"></label>
+      <div class="row"><button class="primary" type="submit">저장</button><button type="button" id="cancel">취소</button></div></form>`);
+    r.querySelector("#cancel").onclick = closeModal;
+    r.querySelector("#vf").onsubmit = async (e) => { e.preventDefault(); const f = new FormData(e.target);
+      await api(`/trips/${t.id}/votes`, { method: "POST", body: { user_id: u.id, stay_id: cand.stay.id, kind, reason: f.get("reason"), note: f.get("note") || "" } }); closeModal(); render(); };
+  };
+
+  // ---------- wiring ----------
+  document.getElementById("userSel").onchange = (e) => { ui.currentUserId = +e.target.value; save(); render(); };
+  document.getElementById("addUserBtn").onclick = openAddUser;
+  document.getElementById("homeLink").onclick = () => { if (INVITE) { location.href = "index.html"; return; } ui.view = "trips"; save(); render(); window.scrollTo(0, 0); };
+  document.getElementById("shareBtn").onclick = async () => {
+    const tripPart = (ui.view === "board" && ui.currentTripId) ? ui.currentTripId : null;
+    const url = inviteUrl(tripPart);
+    const copied = await copyText(url);
+    const box = document.getElementById("shareBox"); box.hidden = false;
+    box.querySelector(".muted").textContent = copied ? (tripPart ? "링크가 복사됐습니다. 이 링크로 들어오면 테스트 후 이 여행에 합류합니다." : "링크가 복사됐습니다") : "아래 링크를 복사하세요";
+    document.getElementById("shareUrl").textContent = url;
+  };
+  document.getElementById("shareClose").onclick = () => { document.getElementById("shareBox").hidden = true; };
+  (async () => { try { META = await api("/meta"); } catch (e) { document.getElementById("main").innerHTML = `<div class="err">API 에 연결할 수 없습니다. <code>docker compose up -d --build</code> 후 http://localhost:8080 으로 여세요.<br>${h(e.message)}</div>`; return; } render(); })();
+})();
+</script>
+</body>
+</html>
