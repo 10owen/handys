@@ -528,3 +528,9 @@
 - **AI 출력**: 해당 커밋을 히스토리에서 제거(reset 후 force push). `.gitignore` 에 `AI_PROMPTS.md` 추가. README §4 와 CLAUDE.md 의 언급을 "로컬 기록, 제출물 미포함" 으로 수정.
 - **검토**: 사용자 지적으로 발견. AI 는 force push 후 `git ls-remote` 와 원격 파일 목록으로 AI_PROMPTS.md 부재 확인.
 - **결과**: 수정 후 채택. 훅 설정 커밋(.claude/)은 남겨 둠 — 유지 여부는 사용자 판단.
+
+### 2026-09-18 23:05 — 훅 설정 커밋 제거
+- **요청**: 훅 설정(.claude/) 커밋도 제출물에서 제외.
+- **AI 출력**: rebase --onto 로 해당 커밋을 히스토리에서 제거, `.gitignore` 에 `.claude/` 추가, force push. 훅은 로컬에서 계속 동작.
+- **검토**: AI 가 push 후 원격 파일 목록에서 .claude/·AI_PROMPTS.md 부재 확인.
+- **결과**: 채택.
