@@ -1,0 +1,10 @@
+# 제출 대상이 아닌 로컬 작업 메모 (채용 메일 원문·내부 판단 기록)
+_notes.local/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+__pycache__/
