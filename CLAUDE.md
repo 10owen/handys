@@ -6,7 +6,7 @@
 ## 기록은 두 층이다
 
 - `AI_PROMPTS.md` — 사용자가 입력한 **프롬프트 전문**. `.claude/settings.json` 의 `UserPromptSubmit` 훅
-  (`.claude/hooks/log-prompt.sh`) 이 자동으로 append 한다. AI 가 손대지 않는다 (수정·정리 금지).
+  (`.claude/hooks/log-prompt.sh`) 이 자동으로 append 한다. AI 가 손대지 않는다 (수정·정리 금지). **gitignore 대상, 커밋하지 않는다.**
 - `AI_LOG.md` — 작업 단위별 **요약·검토·결과**. AI 가 아래 규칙대로 수동으로 쓴다.
 
 ## AI_LOG.md 기록 규칙 (필수)
