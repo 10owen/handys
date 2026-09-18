@@ -1,0 +1,102 @@
+-- 시드: 사전 계층만 (어휘 트리 · 숙소 · 선택지 + 고정 가중치).
+-- 유저·여행·이벤트·해석·파생은 API 가 만든다 (SEED_DEMO=1).
+SET NAMES utf8mb4;
+USE staymate;
+
+-- 어휘 트리. 최상위 5개 범주 아래 초기 어휘 20개. 이후는 해석기가 자식으로 분화시킨다.
+INSERT INTO tags (id, name, parent, source, definition) VALUES
+  (1, '입지', NULL, 'seed', '숙소가 어디에 있는가'),
+  (2, '뷰', NULL, 'seed', '창밖으로 무엇이 보이는가'),
+  (3, '공간', NULL, 'seed', '객실 구성과 크기'),
+  (4, '등급', NULL, 'seed', '가격대와 분위기'),
+  (5, '편의', NULL, 'seed', '부대시설과 운영 편의'),
+  (6, '도심상권', '입지', 'seed', '번화가·상권 도보권'),
+  (7, '역세권', '입지', 'seed', '지하철·역 도보권'),
+  (8, '해변', '입지', 'seed', '해변 도보권'),
+  (9, '리조트인접', '입지', 'seed', '워터파크·서핑장 등 리조트 시설 인접'),
+  (10, '교외조용', '입지', 'seed', '시내에서 떨어진 조용한 곳'),
+  (11, '바다뷰', '뷰', 'seed', '객실에서 바다가 보임'),
+  (12, '도시야경', '뷰', 'seed', '객실에서 도시 야경이 보임'),
+  (13, '숲뷰', '뷰', 'seed', '객실에서 숲·산이 보임'),
+  (14, '주방', '공간', 'seed', '조리 가능한 주방'),
+  (15, '거실', '공간', 'seed', '침실과 분리된 거실'),
+  (16, '방2개이상', '공간', 'seed', '침실 2개 이상'),
+  (17, '넓은객실', '공간', 'seed', '동급 대비 넓은 객실'),
+  (18, '세탁기', '공간', 'seed', '객실 내 세탁기'),
+  (19, '부티크', '등급', 'seed', '개성 있는 디자인·소규모'),
+  (20, '업스케일', '등급', 'seed', '상위 등급 마감·서비스'),
+  (21, '실속', '등급', 'seed', '기본에 충실한 표준형'),
+  (22, '가성비', '등급', 'seed', '가격 대비 만족'),
+  (23, '주차', '편의', 'seed', '전용 주차'),
+  (24, '수영장', '편의', 'seed', '수영장 보유'),
+  (25, '키즈', '편의', 'seed', '아이 동반 편의(침대 가드·놀이 공간 등)');
+
+-- 숙소는 db/init/03_stays.sql (야놀자에서 읽은 핸디즈 지점)
+
+-- 선택지. 구조화된 입력이라 고정 가중치를 선택지에 붙인다 (규칙 해석기 rules-v1 이 읽는다).
+INSERT INTO choices (kind, code, parent_code, ord, text, image, tag_weights) VALUES
+  ('quiz_q','1',NULL,1,'여행에서 숙소는 어떤 곳인가요?',NULL,NULL),
+  ('quiz_opt','1:1','1',1,'잠만 자는 곳. 밖에서 노는 게 중요','img/q1_1.jpg','[{"tag_id": 21, "score": 2}, {"tag_id": 22, "score": 2}, {"tag_id": 6, "score": 1}]'),
+  ('quiz_opt','1:2','1',2,'하루의 절반은 숙소에서 보냄','img/q1_2.jpg','[{"tag_id": 17, "score": 2}, {"tag_id": 15, "score": 2}, {"tag_id": 14, "score": 1}]'),
+  ('quiz_opt','1:3','1',3,'숙소 자체가 여행의 목적','img/q1_3.jpg','[{"tag_id": 20, "score": 2}, {"tag_id": 11, "score": 1}, {"tag_id": 24, "score": 1}]'),
+  ('quiz_q','2',NULL,2,'창밖으로 보이면 좋겠는 것은?',NULL,NULL),
+  ('quiz_opt','2:1','2',1,'바다','img/q2_1.jpg','[{"tag_id": 11, "score": 3}, {"tag_id": 8, "score": 2}]'),
+  ('quiz_opt','2:2','2',2,'도시 야경','img/q2_2.jpg','[{"tag_id": 12, "score": 3}, {"tag_id": 6, "score": 2}]'),
+  ('quiz_opt','2:3','2',3,'숲이나 산','img/q2_3.jpg','[{"tag_id": 13, "score": 3}, {"tag_id": 10, "score": 2}]'),
+  ('quiz_opt','2:4','2',4,'상관없음',NULL,'[]'),
+  ('quiz_q','3',NULL,3,'저녁은 주로?',NULL,NULL),
+  ('quiz_opt','3:1','3',1,'나가서 먹는다','img/q3_1.jpg','[{"tag_id": 6, "score": 2}, {"tag_id": 7, "score": 1}]'),
+  ('quiz_opt','3:2','3',2,'장 봐서 해먹는다','img/q3_2.jpg','[{"tag_id": 14, "score": 3}, {"tag_id": 15, "score": 1}]'),
+  ('quiz_opt','3:3','3',3,'반반',NULL,'[{"tag_id": 14, "score": 1}]'),
+  ('quiz_q','4',NULL,4,'하나만 고른다면?',NULL,NULL),
+  ('quiz_opt','4:1','4',1,'위치','img/q4_1.jpg','[{"tag_id": 7, "score": 2}, {"tag_id": 6, "score": 1}]'),
+  ('quiz_opt','4:2','4',2,'넓이','img/q4_2.jpg','[{"tag_id": 17, "score": 2}, {"tag_id": 16, "score": 1}]'),
+  ('quiz_opt','4:3','4',3,'가격','img/q4_3.jpg','[{"tag_id": 22, "score": 3}, {"tag_id": 21, "score": 1}]'),
+  ('quiz_opt','4:4','4',4,'분위기','img/q4_4.jpg','[{"tag_id": 19, "score": 2}, {"tag_id": 20, "score": 1}]'),
+  ('quiz_q','5',NULL,5,'이동은?',NULL,NULL),
+  ('quiz_opt','5:1','5',1,'대중교통','img/q5_1.jpg','[{"tag_id": 7, "score": 2}]'),
+  ('quiz_opt','5:2','5',2,'자차','img/q5_2.jpg','[{"tag_id": 23, "score": 3}, {"tag_id": 10, "score": 1}]'),
+
+  ('companion','커플',NULL,1,'커플',NULL,'[{"tag_id": 19, "score": 1}]'),
+  ('companion','친구',NULL,2,'친구',NULL,'[{"tag_id": 16, "score": 1}, {"tag_id": 15, "score": 1}]'),
+  ('companion','가족',NULL,3,'가족',NULL,'[{"tag_id": 16, "score": 2}, {"tag_id": 14, "score": 1}, {"tag_id": 23, "score": 1}]'),
+
+  ('purpose','휴양',NULL,1,'휴양',NULL,'[{"tag_id": 8, "score": 2}, {"tag_id": 11, "score": 2}, {"tag_id": 24, "score": 1}]'),
+  ('purpose','도심관광',NULL,2,'도심관광',NULL,'[{"tag_id": 6, "score": 2}, {"tag_id": 7, "score": 2}]'),
+  ('purpose','맛집',NULL,3,'맛집',NULL,'[{"tag_id": 6, "score": 2}]'),
+  ('purpose','서핑',NULL,4,'서핑',NULL,'[{"tag_id": 8, "score": 2}, {"tag_id": 9, "score": 2}, {"tag_id": 23, "score": 1}]'),
+  ('purpose','아이동반',NULL,5,'아이동반',NULL,'[{"tag_id": 25, "score": 3}, {"tag_id": 16, "score": 2}, {"tag_id": 23, "score": 1}]'),
+  ('purpose','기념일',NULL,6,'기념일',NULL,'[{"tag_id": 20, "score": 2}, {"tag_id": 11, "score": 1}, {"tag_id": 19, "score": 1}]'),
+  ('purpose','워케이션',NULL,7,'워케이션',NULL,'[{"tag_id": 14, "score": 2}, {"tag_id": 17, "score": 1}, {"tag_id": 10, "score": 1}]'),
+  ('purpose','조용한휴식',NULL,8,'조용한휴식',NULL,'[{"tag_id": 10, "score": 3}, {"tag_id": 13, "score": 1}]'),
+
+  ('region','무관',NULL,0,'무관',NULL,NULL),
+  ('region','서울',NULL,1,'서울',NULL,NULL),
+  ('region','경기·인천',NULL,2,'경기·인천',NULL,NULL),
+  ('region','부산',NULL,3,'부산',NULL,NULL),
+  ('region','강원',NULL,4,'강원',NULL,NULL),
+  ('region','제주',NULL,5,'제주',NULL,NULL),
+  ('region','대구',NULL,6,'대구',NULL,NULL),
+  ('region','대전',NULL,7,'대전',NULL,NULL),
+  ('region','광주',NULL,8,'광주',NULL,NULL),
+  ('region','충남',NULL,9,'충남',NULL,NULL),
+  ('region','전남',NULL,10,'전남',NULL,NULL),
+  ('region','경북',NULL,11,'경북',NULL,NULL),
+  ('region','울산',NULL,12,'울산',NULL,NULL),
+
+  -- 이유. "@parent:뷰" = 그 숙소의 태그 중 부모가 뷰인 것에 적용.
+  ('reason_keep','k_loc',NULL,1,'위치가 좋아서',NULL,'[{"parent_id": 1, "score": 2}]'),
+  ('reason_keep','k_view',NULL,2,'뷰가 좋아서',NULL,'[{"parent_id": 2, "score": 2}]'),
+  ('reason_keep','k_space',NULL,3,'넓어서',NULL,'[{"tag_id": 17, "score": 2}, {"tag_id": 15, "score": 1}]'),
+  ('reason_keep','k_kitchen',NULL,4,'주방이 있어서',NULL,'[{"tag_id": 14, "score": 2}]'),
+  ('reason_keep','k_price',NULL,5,'가격이 괜찮아서',NULL,'[{"tag_id": 22, "score": 2}]'),
+  ('reason_keep','k_mood',NULL,6,'분위기가 좋아서',NULL,'[{"parent_id": 4, "score": 2}]'),
+  ('reason_keep','k_etc',NULL,7,'기타',NULL,'[]'),
+  ('reason_drop','d_city',NULL,1,'너무 시내라 시끄러울 듯',NULL,'[{"tag_id": 6, "score": -2}, {"tag_id": 10, "score": 1}]'),
+  ('reason_drop','d_far',NULL,2,'너무 외져서',NULL,'[{"tag_id": 7, "score": 2}, {"tag_id": 6, "score": 1}, {"tag_id": 10, "score": -1}]'),
+  ('reason_drop','d_small',NULL,3,'방이 좁아서',NULL,'[{"tag_id": 17, "score": 2}, {"tag_id": 16, "score": 1}]'),
+  ('reason_drop','d_price',NULL,4,'비싸서',NULL,'[{"tag_id": 22, "score": 2}, {"tag_id": 20, "score": -1}]'),
+  ('reason_drop','d_view',NULL,5,'뷰가 별로라서',NULL,'[{"parent_id": 2, "score": -2}]'),
+  ('reason_drop','d_kitchen',NULL,6,'주방이 없어서',NULL,'[{"tag_id": 14, "score": 2}]'),
+  ('reason_drop','d_mood',NULL,7,'분위기가 안 맞아서',NULL,'[{"parent_id": 4, "score": -2}]'),
+  ('reason_drop','d_etc',NULL,8,'기타',NULL,'[]');

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>스테이메이트 — DB 스키마</title>
+<style>
+  :root { --bg:#f7f7f5; --card:#fff; --ink:#1b1b1b; --muted:#6b6b6b; --line:#e4e4e0; --acc:#1f6f5f; --l1:#eef3fb; --l2:#fff6e5; --l3:#e7f3ee; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; background:var(--bg); color:var(--ink); font-size:14px; line-height:1.5; }
+  header { display:flex; align-items:center; gap:12px; padding:10px 16px; background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; }
+  header h1 { font-size:16px; margin:0; }
+  header a { color:var(--muted); font-size:12px; }
+  main { max-width:1180px; margin:0 auto; padding:16px; }
+  .intro { background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px; margin-bottom:16px; }
+  .intro p { margin:6px 0; }
+  .flow { display:grid; grid-template-columns:1fr auto 1fr auto 1fr; gap:8px; align-items:center; margin:12px 0; }
+  .flow .box { border-radius:8px; padding:10px 12px; font-size:13px; }
+  .flow .arrow { color:var(--muted); font-size:20px; text-align:center; }
+  @media (max-width:760px) { .flow { grid-template-columns:1fr; } .flow .arrow { transform:rotate(90deg); } }
+  .layer { margin:20px 0 8px; font-size:15px; font-weight:600; padding:6px 10px; border-radius:6px; display:inline-block; }
+  .l1 { background:var(--l1); } .l2 { background:var(--l2); } .l3 { background:var(--l3); } .l4 { background:#f3ecfb; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:12px; }
+  .tbl { background:var(--card); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+  .tbl .hd { padding:8px 12px; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; align-items:baseline; gap:8px; }
+  .tbl .hd b { font-family:ui-monospace, Menlo, monospace; font-size:13px; }
+  .tbl .hd .n { color:var(--muted); font-size:12px; white-space:nowrap; }
+  .tbl .cm { padding:4px 12px; color:var(--muted); font-size:12px; border-bottom:1px solid var(--line); }
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  td { padding:3px 12px; vertical-align:top; border-bottom:1px solid #f1f1ee; }
+  td.c { font-family:ui-monospace, Menlo, monospace; white-space:nowrap; }
+  td.t { color:var(--muted); white-space:nowrap; }
+  td.k { color:var(--acc); font-weight:600; white-space:nowrap; width:1%; }
+  td.cc { color:var(--muted); }
+  .fk { padding:6px 12px; font-size:12px; color:var(--muted); background:#fafaf8; }
+  .fk code { font-family:ui-monospace, Menlo, monospace; }
+  .err { background:#fbeae4; color:#8a3212; padding:8px 12px; border-radius:6px; }
+  .muted { color:var(--muted); }
+</style>
+</head>
+<body>
+<header><h1>DB 스키마</h1><span class="muted">staymate · MySQL 8 · information_schema 에서 실시간으로 읽음</span><a href="index.html">← 앱으로</a><a href="api/docs" target="_blank">API 문서</a></header>
+<main id="main">불러오는 중…</main>
+<script>
+(async () => {
+  const LAYERS = {
+    "1. 사전 — 자라는 취향 어휘 트리 · 카탈로그 · 입력 선택지": { cls: "l1", tables: ["tags", "stays", "choices"] },
+    "2. 원본 — 사람이 한 일. append-only": { cls: "l2", tables: ["users", "trips", "trip_members", "trip_candidates", "stay_likes", "stay_comments", "events"] },
+    "3. 해석 — 해석기(rules-v1 | ai-*)가 이벤트를 태그 가중치로 번역한 결과": { cls: "l4", tables: ["event_interpretations"] },
+    "4. 파생 — 해석 결과의 합. 언제든 다시 계산": { cls: "l3", tables: ["taste_profiles", "trip_keywords"] },
+  };
+  const h = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const m = document.getElementById("main");
+  let tables;
+  try { tables = await (await fetch("api/schema")).json(); } catch (e) { m.innerHTML = `<div class="err">API 에 연결할 수 없습니다. docker compose up -d --build 후 다시 여세요.</div>`; return; }
+  const byName = Object.fromEntries(tables.map(t => [t.name, t]));
+  const card = (t) => `<div class="tbl">
+    <div class="hd"><b>${h(t.name)}</b><span class="n">${t.count} rows</span></div>
+    ${t.comment ? `<div class="cm">${h(t.comment)}</div>` : ""}
+    <table>${t.columns.map(c => `<tr><td class="k">${c.key === "PRI" ? "PK" : c.key === "MUL" ? "idx" : c.key === "UNI" ? "uq" : ""}</td><td class="c">${h(c.name)}</td><td class="t">${h(c.type)}${c.nullable === "YES" ? " ?" : ""}</td><td class="cc">${h(c.comment)}</td></tr>`).join("")}</table>
+    ${t.fks.length ? `<div class="fk">${t.fks.map(f => `<code>${h(f.col)}</code> → <code>${h(f.ref_t)}.${h(f.ref_col)}</code>`).join(" · ")}</div>` : ""}
+  </div>`;
+  let html = `<div class="intro">
+    <p><b>원칙</b> — 키워드를 저장하지 않고, 키워드를 만든 원본 행동(<code>events</code>)을 저장한다. 해석은 교체 가능한 부품(해석기)이 하고 결과를 <code>event_interpretations</code> 에 남긴다. 해석기가 바뀌면 <code>POST /api/admin/reinterpret</code> 로 해석과 파생만 다시 만든다. 어휘(<code>tags</code>)는 고정 목록이 아니라 해석기가 자식 태그를 제안하며 자라는 트리다.</p>
+    <div class="flow">
+      <div class="box l2"><b>events</b><br>quiz_answer · vote · vote_removed · candidate_added · trip_created · (checkout_feedback)</div>
+      <div class="arrow">→</div>
+      <div class="box" style="background:#f3ecfb"><b>해석기</b> → <b>event_interpretations</b><br>rules-v1: 선택지(<code>choices.tag_weights</code>) · 숙소 태그<br>ai-*: 자유 문장 · 맥락 → 가중치 + <b>새 태그 제안</b> (프로토콜만)</div>
+      <div class="arrow">→</div>
+      <div class="box l3"><b>taste_profiles</b> (유저 × base|커플|친구|가족)<br><b>trip_keywords</b> (여행 전체 · 멤버별)</div>
+    </div>
+    <p class="muted">추천 점수 = Σ멤버 taste_profiles[base] + Σ멤버 (taste_profiles[동행유형] − trip_keywords[member]) + Σ멤버 trip_keywords[member] + 컨텍스트(choices companion/purpose). 하드 필터 = 지역·인원. 프로토콜: <code>docs/INTERPRETER_PROTOCOL.md</code></p>
+  </div>`;
+  const placed = new Set();
+  for (const [title, { cls, tables: names }] of Object.entries(LAYERS)) {
+    html += `<div class="layer ${cls}">${h(title)}</div><div class="grid">${names.filter(n => byName[n]).map(n => { placed.add(n); return card(byName[n]); }).join("")}</div>`;
+  }
+  const rest = tables.filter(t => !placed.has(t.name));
+  if (rest.length) html += `<div class="layer">기타</div><div class="grid">${rest.map(card).join("")}</div>`;
+  m.innerHTML = html;
+})();
+</script>
+</body>
+</html>
