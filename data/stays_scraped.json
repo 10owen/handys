@@ -1,0 +1,7526 @@
+[
+ {
+  "id": "y1000112007",
+  "yanolja_id": 1000112007,
+  "name": "어반스테이 서면",
+  "brand": "어반스테이",
+  "is_handys": true,
+  "region": "부산",
+  "address": "부산광역시 부산진구 중앙대로 752",
+  "lat": 35.159313,
+  "lng": 129.060916,
+  "capacity": 2,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": 4.5,
+  "review_count": 2254,
+  "amenities": [
+   "TV",
+   "금연",
+   "세탁기",
+   "어메니티",
+   "에어컨",
+   "와이파이",
+   "주방",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "스튜디오",
+   "스튜디오 랜덤",
+   "스튜디오 시티",
+   "스튜디오 싱글",
+   "스튜디오 트윈",
+   "싱글 침대 1개",
+   "싱글 침대 2개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "출장",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "조용함",
+    "count": 3,
+    "tag": "조용함",
+    "polarity": "+"
+   },
+   {
+    "keyword": "편의점",
+    "count": 3,
+    "tag": "편의점 인접",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 39,
+  "description": "어반스테이 서면 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000112007",
+  "tags": [
+   "가성비",
+   "도심상권",
+   "세탁기",
+   "실속",
+   "조용함",
+   "주방",
+   "주차",
+   "청결",
+   "편의점 인접"
+  ]
+ },
+ {
+  "id": "y1000112780",
+  "yanolja_id": 1000112780,
+  "name": "어반스테이 명동",
+  "brand": "어반스테이",
+  "is_handys": true,
+  "region": "서울",
+  "address": "서울특별시 중구 충무로 24",
+  "lat": 37.563367,
+  "lng": 126.993388,
+  "capacity": 2,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": null,
+  "review_count": 0,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "주방",
+   "주차",
+   "취사",
+   "테라스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "스튜디오",
+   "스튜디오 시티",
+   "스튜디오 테라스",
+   "스튜디오 파노라마"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "비대면체크인",
+    "count": 2,
+    "tag": "비대면체크인",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "편의점",
+    "count": 1,
+    "tag": "편의점 인접",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 27,
+  "description": "어반스테이 명동 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000112780",
+  "tags": [
+   "가성비",
+   "도심상권",
+   "실속",
+   "주방",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y10040717",
+  "yanolja_id": 10040717,
+  "name": "어반스테이 송도달빛공원",
+  "brand": "어반스테이",
+  "is_handys": true,
+  "region": "경기·인천",
+  "address": "인천광역시 연수구 아트센터대로168번길 101",
+  "lat": 37.4052927,
+  "lng": 126.627967,
+  "capacity": 4,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 2865,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "주방",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "스튜디오",
+   "스튜디오 랜덤",
+   "스튜디오 비즈니스",
+   "스튜디오 시티 - 20층 이상 고층 배정",
+   "스튜디오 와이드",
+   "패밀리투룸",
+   "프리미어 스위트"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 50,
+  "description": "처음엔 평범하다 생각했는데 급하게 바로 옆 다른 레지던스도 묵어봤더니 비교가 확 되더라구요. 같은 가격대인데 여기가 훨씬 깨끗한 편이예요.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10040717",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "실속",
+   "주방",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y10059879",
+  "yanolja_id": 10059879,
+  "name": "어반스테이 낙산해변",
+  "brand": "어반스테이",
+  "is_handys": true,
+  "region": "강원",
+  "address": "강원특별자치도 양양군 강현면 일출로 31-10 (그랑베이 낙산)",
+  "lat": 38.11730633466927,
+  "lng": 128.63207374511694,
+  "capacity": 4,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": 4.3,
+  "review_count": 344,
+  "amenities": [
+   "TV",
+   "금연",
+   "수영장",
+   "어메니티",
+   "엘리베이터",
+   "와이파이",
+   "전기차 충전",
+   "주차",
+   "취사",
+   "키즈"
+  ],
+  "room_types": [
+   "스튜디오",
+   "스튜디오 설악",
+   "스튜디오 패밀리",
+   "스튜디오 패밀리 파셜 오션",
+   "퀸 침대 1개, 슈퍼싱글 침대 1개",
+   "트윈베드",
+   "패밀리",
+   "프리미어 스위트 오션",
+   "프리미어 스위트 패밀리 오션"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "수영장",
+    "count": 6,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 5,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 2,
+    "tag": "넓은객실",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 46,
+  "description": "바다와 산이 반반보이는  비교적 청결한 숙소로 바닷가  바로앞이라 수시로 물멍하러 나갈수있음ㆍ렌지는 없어서 주변 식당이나 편의점 이용했고 갠적으로 낙산사가 가까워서 좋았음ㆍ야외온수풀은 작지만 무료라 이른아침에 개인풀처럼 사용해서 더 좋았음",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10059879",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "바다뷰",
+   "방2개이상",
+   "수영장",
+   "실속",
+   "주방",
+   "주차",
+   "청결",
+   "키즈",
+   "해변"
+  ]
+ },
+ {
+  "id": "y10064949",
+  "yanolja_id": 10064949,
+  "name": "플라트 호텔 동탄",
+  "brand": "플라트",
+  "is_handys": true,
+  "region": "경기·인천",
+  "address": "경기도 화성시 동탄반석로 171",
+  "lat": 37.20409332898364,
+  "lng": 127.07059349491004,
+  "capacity": 2,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": 4.6,
+  "review_count": 287,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "엘리베이터",
+   "와이파이",
+   "주방",
+   "주차"
+  ],
+  "room_types": [
+   "슈퍼싱글 침대 2개",
+   "스탠다드 트윈",
+   "트윈베드"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 5,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "비대면체크인",
+    "count": 4,
+    "tag": "비대면체크인",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 3,
+    "tag": "가성비",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 35,
+  "description": "인천공항 1층 5B 출구에서 출발하는 리무진 버스를 타고 '동탄터미널'에서 하차하면 플라트 호텔 동탄까지 도보로 약 13분",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10064949",
+  "tags": [
+   "가성비",
+   "도심상권",
+   "비대면체크인",
+   "주방",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y10041421",
+  "yanolja_id": 10041421,
+  "name": "어반스테이 속초해변 C",
+  "brand": "어반스테이",
+  "is_handys": true,
+  "region": "강원",
+  "address": "강원도 속초시 해오름로 195",
+  "lat": 38.190177,
+  "lng": 128.601396,
+  "capacity": 6,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 1767,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "주방",
+   "주차",
+   "취사",
+   "키즈"
+  ],
+  "room_types": [
+   "스튜디오",
+   "스튜디오 파셜 오션",
+   "패밀리 투룸 오션 18평",
+   "프리미어 스위트 오션",
+   "프리미어 스위트 코너"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "바다뷰",
+    "count": 5,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "해변",
+    "count": 2,
+    "tag": "해변",
+    "polarity": "+"
+   },
+   {
+    "keyword": "세탁기",
+    "count": 2,
+    "tag": "세탁기",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 35,
+  "description": "처음 생겼을 때보다는 벽지나 마감 등에 사용흔적이 있지만, 속초 여행의 기점으로 고성, 양양, 설악 등 이동을 위한 교통편 이용에 용이한 위치임.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10041421",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "바다뷰",
+   "방2개이상",
+   "실속",
+   "주방",
+   "주차",
+   "키즈",
+   "해변"
+  ]
+ },
+ {
+  "id": "y10056010",
+  "yanolja_id": 10056010,
+  "name": "어반스테이 속초해변 AB",
+  "brand": "어반스테이",
+  "is_handys": true,
+  "region": "강원",
+  "address": "강원특별자치도 속초시 해오름로 167",
+  "lat": 38.18891149213406,
+  "lng": 128.6032576737328,
+  "capacity": 3,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 695,
+  "amenities": [
+   "TV",
+   "금연",
+   "세탁기",
+   "어메니티",
+   "와이파이",
+   "주차",
+   "커피",
+   "키즈"
+  ],
+  "room_types": [
+   "스튜디오",
+   "스튜디오 가든",
+   "스튜디오 랜덤",
+   "스튜디오 트윈",
+   "스튜디오 패밀리",
+   "싱글 침대 2개",
+   "퀸 침대 1개, 싱글 침대 1개",
+   "트윈베드"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 6,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 5,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주방",
+    "count": 4,
+    "tag": "주방",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "세탁기",
+    "count": 3,
+    "tag": "세탁기",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 57,
+  "description": "위치가 너무 좋고 특히 빌트인 냉장고, 전자레인지가 숙소를 이용하기엔 잘되어있어서 단점을 상쇄할 수 있을거 같아요",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10056010",
+  "tags": [
+   "가성비",
+   "거실",
+   "바다뷰",
+   "방2개이상",
+   "세탁기",
+   "실속",
+   "주방",
+   "주차",
+   "청결",
+   "키즈",
+   "해변"
+  ]
+ },
+ {
+  "id": "y10055546",
+  "yanolja_id": 10055546,
+  "name": "어반스테이 부산송도해변",
+  "brand": "어반스테이",
+  "is_handys": true,
+  "region": "부산",
+  "address": "부산광역시 서구 송도해변로 97 (그랩 디 오션 송도)",
+  "lat": 35.0772276057541,
+  "lng": 129.01784542700042,
+  "capacity": 4,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": 4.6,
+  "review_count": 957,
+  "amenities": [
+   "TV",
+   "금연",
+   "와이파이",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "스튜디오",
+   "스튜디오 → 스튜디오 패밀리",
+   "스튜디오 배리어프리",
+   "스튜디오 스위트 와이드 오션",
+   "스튜디오 오션",
+   "스튜디오 트윈",
+   "스튜디오 트윈 오션",
+   "스튜디오 패밀리",
+   "스튜디오 패밀리 오션",
+   "싱글 침대 2개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 8,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "해변",
+    "count": 7,
+    "tag": "해변",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 7,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 7,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 5,
+    "tag": "바다뷰",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 44,
+  "description": "어반스테이 부산송도해변 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10055546",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "바다뷰",
+   "방2개이상",
+   "실속",
+   "주방",
+   "주차",
+   "청결",
+   "해변"
+  ]
+ },
+ {
+  "id": "y10059635",
+  "yanolja_id": 10059635,
+  "name": "어반스테이 해운대역",
+  "brand": "어반스테이",
+  "is_handys": true,
+  "region": "부산",
+  "address": "부산광역시 해운대구 해운대로 620 (해운대 라뮤에뜨)",
+  "lat": 35.162963372923,
+  "lng": 129.15845336170355,
+  "capacity": 4,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": 4.6,
+  "review_count": 308,
+  "amenities": [
+   "TV",
+   "금연",
+   "엘리베이터",
+   "와이파이",
+   "전기차 충전",
+   "조식",
+   "주방",
+   "주차",
+   "취사",
+   "커피"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "스튜디오",
+   "스튜디오 랜덤",
+   "스튜디오 트윈",
+   "싱글 침대 2개",
+   "퀸 침대 1개, 싱글 침대 1개",
+   "트윈베드",
+   "패밀리",
+   "프리미어 스위트",
+   "프리미어 스위트 오션"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 3,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "역세권",
+    "count": 2,
+    "tag": "역세권",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 25,
+  "description": "어반스테이 해운대역 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10059635",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "도심상권",
+   "방2개이상",
+   "실속",
+   "역세권",
+   "주방",
+   "주차"
+  ]
+ },
+ {
+  "id": "y10044431",
+  "yanolja_id": 10044431,
+  "name": "어반스테이 부산시청",
+  "brand": "어반스테이",
+  "is_handys": true,
+  "region": "부산",
+  "address": "부산광역시 연제구 중앙대로 1116-8",
+  "lat": 35.187066,
+  "lng": 129.082042,
+  "capacity": 2,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 1263,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "주방",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "스튜디오",
+   "스튜디오 랜덤",
+   "스튜디오 비즈니스",
+   "스튜디오 시티",
+   "스튜디오 와이드"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "세탁기",
+    "count": 4,
+    "tag": "세탁기",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 29,
+  "description": "어반스테이 부산시청 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10044431",
+  "tags": [
+   "가성비",
+   "도심상권",
+   "세탁기",
+   "실속",
+   "주방",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y10040231",
+  "yanolja_id": 10040231,
+  "name": "어반스테이 제주공항",
+  "brand": "어반스테이",
+  "is_handys": true,
+  "region": "제주",
+  "address": "제주특별자치도 제주시 연동6길 5 (제주1번가 더테라스)",
+  "lat": 33.485515,
+  "lng": 126.489438,
+  "capacity": 3,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": 3.8,
+  "review_count": 24,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "주방",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "슈퍼싱글 침대 1개",
+   "스튜디오",
+   "스튜디오 싱글",
+   "스튜디오 와이드",
+   "여러모로 스위트치고는 아쉬움만 남음",
+   "프리미어 스위트"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "침구",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "세탁기",
+    "count": 4,
+    "tag": "세탁기",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 3,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 40,
+  "description": "그리고 아침에 기분좋게 캡슐커피까지 내려먹을 수 있게 머신까지 완벽한 숙소여서 전 앞으로도 어반스테이 자주 가게될거같아요~~~ 편안한 휴식과 여행이되었던거 같아서 만족하고 대만족합니당!! 앞으로도 최상의 서비스로 잘 부탁드려요!! 감사합니다!!❤️👍",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10040231",
+  "tags": [
+   "가성비",
+   "넓은객실",
+   "세탁기",
+   "실속",
+   "주방",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y10058950",
+  "yanolja_id": 10058950,
+  "name": "어반스테이 인천차이나타운",
+  "brand": "어반스테이",
+  "is_handys": true,
+  "region": "경기·인천",
+  "address": "인천 제물포구 서해대로417번길 1",
+  "lat": 37.46386321674182,
+  "lng": 126.63246523716003,
+  "capacity": 7,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 444,
+  "amenities": [
+   "TV",
+   "금연",
+   "세탁기",
+   "와이파이",
+   "전기차 충전",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "슈퍼싱글 침대 2개",
+   "스튜디오 B",
+   "스튜디오 랜덤",
+   "스튜디오 와이드",
+   "스튜디오 트윈",
+   "스튜디오 하버오션",
+   "패밀리 쓰리룸",
+   "패밀리 투룸"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 6,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "조용함",
+    "count": 3,
+    "tag": "조용함",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 3,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 2,
+    "tag": "키즈",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 28,
+  "description": "어반스테이 인천차이나타운점은 중앙 냉난방 시스템으로 운영되는 건물로,  냉방은 5월부터 9월까지, 난방은 11월부터 3월까지 운영됩니다",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10058950",
+  "tags": [
+   "가성비",
+   "거실",
+   "도심상권",
+   "방2개이상",
+   "세탁기",
+   "실속",
+   "조용함",
+   "주방",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y10054581",
+  "yanolja_id": 10054581,
+  "name": "어반스테이 당진터미널",
+  "brand": "어반스테이",
+  "is_handys": true,
+  "region": "충남",
+  "address": "충청남도 당진시 수청5길 38",
+  "lat": 36.89987447641566,
+  "lng": 126.64698953591231,
+  "capacity": 4,
+  "price_tier": 1,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 594,
+  "amenities": [
+   "TV",
+   "건조기",
+   "금연",
+   "세탁기",
+   "와이파이",
+   "주방",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "슈퍼싱글 침대 1개",
+   "슈퍼싱글 침대 2개",
+   "스튜디오",
+   "스튜디오 로프트 패밀리",
+   "스튜디오 싱글",
+   "스튜디오 트윈",
+   "트윈베드"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "세탁기",
+    "count": 2,
+    "tag": "세탁기",
+    "polarity": "+"
+   },
+   {
+    "keyword": "비대면체크인",
+    "count": 1,
+    "tag": "비대면체크인",
+    "polarity": "+"
+   },
+   {
+    "keyword": "편의점",
+    "count": 1,
+    "tag": "편의점 인접",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 27,
+  "description": "어반스테이 당진터미널 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10054581",
+  "tags": [
+   "가성비",
+   "거실",
+   "방2개이상",
+   "세탁기",
+   "실속",
+   "역세권",
+   "주방",
+   "주차"
+  ]
+ },
+ {
+  "id": "y10040605",
+  "yanolja_id": 10040605,
+  "name": "르컬렉티브 부산역",
+  "brand": "르컬렉티브",
+  "is_handys": true,
+  "region": "부산",
+  "address": "부산광역시 동구 충장대로 160",
+  "lat": 35.116085,
+  "lng": 129.045118,
+  "capacity": 8,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 859,
+  "amenities": [
+   "TV",
+   "금연",
+   "스타일러",
+   "어메니티",
+   "와이파이",
+   "주방",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "킹 침대 2개, 슈퍼싱글 침대 1개, 침구 1개",
+   "패밀리 쓰리룸 G",
+   "패밀리 쓰리룸 G 파노라마",
+   "패밀리 투룸 G",
+   "프리미어 스위트 G 커넥팅",
+   "프리미어 스위트 와이드 - 뷰랜덤 20평"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 9,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 3,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 2,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "역세권",
+    "count": 2,
+    "tag": "역세권",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 30,
+  "description": "해운대에서도 부산역에서도 르컬렉티브가 가격대비 가장 좋은 위치와 숙박경험을 제공해준다고 봅니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10040605",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "도심상권",
+   "방2개이상",
+   "역세권",
+   "주방",
+   "주차",
+   "청결",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y10044553",
+  "yanolja_id": 10044553,
+  "name": "르컬렉티브 부산 기장",
+  "brand": "르컬렉티브",
+  "is_handys": true,
+  "region": "부산",
+  "address": "부산광역시 기장군 기장읍 동부산관광7로 17",
+  "lat": 35.189029,
+  "lng": 129.214258,
+  "capacity": 8,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 777,
+  "amenities": [
+   "TV",
+   "금연",
+   "와이파이",
+   "전기차 충전",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "패밀리 쓰리룸",
+   "패밀리 쓰리룸 오션",
+   "패밀리 투룸",
+   "패밀리 투룸 오션"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 4,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 4,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주방",
+    "count": 3,
+    "tag": "주방",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 38,
+  "description": "르컬렉티브 부산 기장 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10044553",
+  "tags": [
+   "거실",
+   "방2개이상",
+   "주방",
+   "주차",
+   "청결",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y10058904",
+  "yanolja_id": 10058904,
+  "name": "르컬렉티브 시흥 웨이브파크 펜트하우스",
+  "brand": "르컬렉티브",
+  "is_handys": true,
+  "region": "경기·인천",
+  "address": "경기도 시흥시 거북섬로 135 (시흥 웨이브파크 푸르지오시티)",
+  "lat": 37.32084405363311,
+  "lng": 126.68092201973437,
+  "capacity": 6,
+  "price_tier": 3,
+  "min_price": null,
+  "rating": null,
+  "review_count": 0,
+  "amenities": [
+   "TV",
+   "금연",
+   "바베큐",
+   "발코니",
+   "세탁기",
+   "수영장",
+   "와이파이",
+   "주방",
+   "주차",
+   "취사",
+   "테라스"
+  ],
+  "room_types": [
+   "르컬렉티브 시흥 웨이브파크 펜트하우스"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "넓음",
+    "count": 1,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 1,
+    "tag": "키즈",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 14,
+  "description": "르컬렉티브 시흥 웨이브파크 펜트하우스 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10058904",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "리조트인접",
+   "바다뷰",
+   "방2개이상",
+   "세탁기",
+   "수영장",
+   "업스케일",
+   "주방",
+   "주차"
+  ]
+ },
+ {
+  "id": "y10052429",
+  "yanolja_id": 10052429,
+  "name": "르컬렉티브 시흥 웨이브파크",
+  "brand": "르컬렉티브",
+  "is_handys": true,
+  "region": "경기·인천",
+  "address": "경기도 시흥시 거북섬로 135",
+  "lat": 37.32084405363311,
+  "lng": 126.68092201973437,
+  "capacity": 6,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 955,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "수영장",
+   "와이파이",
+   "조식",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "스튜디오",
+   "스튜디오 로프트",
+   "스튜디오 로프트 서프",
+   "스튜디오 로프트 트윈",
+   "스튜디오 로프트 파셜 오션",
+   "스튜디오 로프트 패밀리",
+   "스튜디오 로프트 패밀리-펫룸",
+   "싱글 침대 2개",
+   "퀸 침대 1개, 싱글 침대 1개",
+   "패밀리 투룸 오션"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "수영장",
+    "count": 3,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 2,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 2,
+    "tag": "가성비",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 1,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 1,
+    "tag": "바다뷰",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 41,
+  "description": "르컬렉티브 시흥 웨이브파크 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10052429",
+  "tags": [
+   "거실",
+   "리조트인접",
+   "바다뷰",
+   "방2개이상",
+   "수영장",
+   "주방",
+   "주차"
+  ]
+ },
+ {
+  "id": "y10058726",
+  "yanolja_id": 10058726,
+  "name": "르컬렉티브 해운대 패러그라프",
+  "brand": "르컬렉티브",
+  "is_handys": true,
+  "region": "부산",
+  "address": "부산광역시 해운대구 해운대로570번길 30 (빌리브 패러그라프 해운대)",
+  "lat": 35.16010725262532,
+  "lng": 129.15689594137453,
+  "capacity": 8,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 24,
+  "amenities": [
+   "TV",
+   "금연",
+   "와이파이",
+   "전기차 충전",
+   "주방",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "스튜디오",
+   "스튜디오 랜덤",
+   "스튜디오 와이드",
+   "스튜디오 패밀리",
+   "퀸 침대 1개, 슈퍼싱글 침대 1개",
+   "트윈베드",
+   "패밀리",
+   "패밀리 쓰리룸 - 고층배정",
+   "패밀리 투룸"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "조용함",
+    "count": 2,
+    "tag": "조용함",
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 2,
+    "tag": "바다뷰",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 33,
+  "description": "르컬렉티브 해운대 패러그라프 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10058726",
+  "tags": [
+   "거실",
+   "방2개이상",
+   "주방",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y3000598",
+  "yanolja_id": 3000598,
+  "name": "베스트웨스턴 프리미어 강남",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 강남구 봉은사로 139",
+  "lat": 37.50634,
+  "lng": 127.029774,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.6,
+  "review_count": 1808,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "피트니스"
+  ],
+  "room_types": [
+   "디럭스 더블",
+   "디럭스 트리플",
+   "디럭스 트윈",
+   "베스트웨스턴 프리미어 강남",
+   "슈페리어 싱글룸",
+   "싱글 침대 1개",
+   "싱글 침대 2개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 7,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 4,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "조용함",
+    "count": 3,
+    "tag": "조용함",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 2,
+    "tag": "친절",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 19,
+  "description": "베스트웨스턴 프리미어 강남 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000598",
+  "tags": [
+   "넓은객실",
+   "조용함",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y10063102",
+  "yanolja_id": 10063102,
+  "name": "UH 플랫 시그니처 강남",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 강남구 테헤란로10길 11 13 3-10층 (역삼동)",
+  "lat": 37.49837957215048,
+  "lng": 127.0326721358182,
+  "capacity": 6,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 160,
+  "amenities": [
+   "TV",
+   "금연",
+   "스타일러",
+   "와이파이",
+   "조식",
+   "주방",
+   "주차"
+  ],
+  "room_types": [],
+  "review_keywords": [
+   {
+    "keyword": "친절",
+    "count": 4,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "편의점",
+    "count": 1,
+    "tag": "편의점 인접",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 26,
+  "description": "강남역 1번 출구에서 도보 5분, 서울의 뷰티·비즈니스 중심지에서 프리미엄 레지던스 경험을 만나보세요. UH 플랫 시그니처 강남은 단순한 숙박을 넘어, 강남에서 살아보는 듯한 특별한 스테이를 제공합니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10063102",
+  "tags": [
+   "주방",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y3011846",
+  "yanolja_id": 3011846,
+  "name": "L7 강남 바이 롯데호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 강남구 테헤란로 415",
+  "lat": 37.505725,
+  "lng": 127.051738,
+  "capacity": 3,
+  "price_tier": 3,
+  "min_price": null,
+  "rating": 4.9,
+  "review_count": 3014,
+  "amenities": [
+   "TV",
+   "금연",
+   "넷플릭스",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "피트니스"
+  ],
+  "room_types": [
+   "▶ 비즈니스 코너 / 9층 / 24시간 이용 가능",
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "슈페리어 더블",
+   "슈페리어 트윈",
+   "스탠다드 더블",
+   "스탠다드 더블 → 슈페리어 더블",
+   "스탠다드 더블 선정릉뷰 16-26층",
+   "스탠다드 더블-1인",
+   "스탠다드 엑세서블 더블룸 - 장애인 편의객실"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 2,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 2,
+    "tag": "친절",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 28,
+  "description": "청결하고 직원분들도 친절합니다.  저번에 가보고 숙소도 맘에들고 위치도 좋아서 다시 숙박했는데 만족합니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3011846",
+  "tags": [
+   "업스케일",
+   "주차"
+  ]
+ },
+ {
+  "id": "y3009026",
+  "yanolja_id": 3009026,
+  "name": "호텔 유리앤",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 강남구 삼성로96길 20",
+  "lat": 37.508904,
+  "lng": 127.057602,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.4,
+  "review_count": 1163,
+  "amenities": [
+   "TV",
+   "금연",
+   "와이파이",
+   "조식",
+   "주차",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "디럭스 더블",
+   "디럭스 더블 - 장애인 배려객실",
+   "디럭스 트리플",
+   "디럭스 트윈",
+   "슈페리어 더블",
+   "슈페리어 트윈",
+   "싱글 침대 2개",
+   "싱글 침대 3개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "출장",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 18,
+  "description": "삼성역에서 도보로 약 7분 거리, 코엑스 입구 바로 앞에 위치해 있어 최상의 입지를 자랑합니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3009026",
+  "tags": [
+   "주차"
+  ]
+ },
+ {
+  "id": "y3008549",
+  "yanolja_id": 3008549,
+  "name": "도미인 서울 강남",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 강남구 봉은사로 134",
+  "lat": 37.505607,
+  "lng": 127.029448,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 3987,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "슈페리어 더블룸",
+   "슈페리어 싱글룸",
+   "슈페리어 트윈룸",
+   "스탠다드 더블룸",
+   "스탠다드 싱글룸",
+   "스탠다드 트윈룸",
+   "싱글 침대 1개",
+   "싱글 침대 1개, 더블 침대 1개",
+   "싱글 침대 2개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 3,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 1,
+    "tag": "가성비",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 1,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 1,
+    "tag": "키즈",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 17,
+  "description": "신논현역, 언주역에서 도보로 약 5분 거리로 어디서든 가까이 찾아오기 좋은 최상의 위치를 자랑합니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3008549",
+  "tags": [
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y3018171",
+  "yanolja_id": 3018171,
+  "name": "호텔 인 나인 강남",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 강남구 영동대로 618",
+  "lat": 37.515469,
+  "lng": 127.060066,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.5,
+  "review_count": 3037,
+  "amenities": [
+   "TV",
+   "금연",
+   "넷플릭스",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차"
+  ],
+  "room_types": [
+   "더블 침대 2개",
+   "디럭스 더블 우드 플루어 룸",
+   "슈퍼싱글 침대 2개",
+   "슈페리어 더블",
+   "스위트",
+   "스탠다드 더블",
+   "스탠다드 더블 1인",
+   "스탠다드 더블 → 스탠다드 더블 고층",
+   "스탠다드 더블 고층",
+   "스탠다드 싱글 - Accessible Room"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 3,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 22,
+  "description": "호텔 인 나인 강남 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3018171",
+  "tags": [
+   "넓은객실",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y1000113633",
+  "yanolja_id": 1000113633,
+  "name": "조선 팰리스 서울 강남 럭셔리 컬렉션 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 강남구 테헤란로 231(역삼동)",
+  "lat": 37.503214,
+  "lng": 127.041506,
+  "capacity": 3,
+  "price_tier": 1,
+  "min_price": 40000,
+  "rating": 5.0,
+  "review_count": 282,
+  "amenities": [
+   "TV",
+   "금연",
+   "수영장",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "피트니스"
+  ],
+  "room_types": [
+   "그랜드 마스터스 스위트 킹베드",
+   "마스터스 주니어 스위트 킹베드"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "수영장",
+    "count": 6,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 6,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 6,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 6,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 28,
+  "description": "조선 팰리스 서울 강남 럭셔리 컬렉션 호텔 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000113633",
+  "tags": [
+   "가성비",
+   "넓은객실",
+   "수영장",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y3013914",
+  "yanolja_id": 3013914,
+  "name": "오월호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 강남구 언주로85길 27",
+  "lat": 37.500582,
+  "lng": 127.041064,
+  "capacity": 2,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.9,
+  "review_count": 12,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "에어컨",
+   "와이파이",
+   "전기차 충전",
+   "주차",
+   "테라스"
+  ],
+  "room_types": [],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 2,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "수영장",
+    "count": 1,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 18,
+  "description": "역삼역 호텔을 보는 중 여기에 반해가지고, 가격도 적당하고 시설도 좋은거 같아 바로 예약했는데, 정말 너무 좋아요!",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3013914",
+  "tags": [
+   "주차"
+  ]
+ },
+ {
+  "id": "y10069819",
+  "yanolja_id": 10069819,
+  "name": "머큐어 앰배서더 서울 동대문",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 중구 동호로 369",
+  "lat": 37.56739689363412,
+  "lng": 127.00186003081929,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 5.0,
+  "review_count": 0,
+  "amenities": [
+   "TV",
+   "건조기",
+   "금연",
+   "반려동물",
+   "세탁기",
+   "어메니티",
+   "엘리베이터",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "키즈",
+   "피트니스"
+  ],
+  "room_types": [
+   "Classic  Twin Room - 클래식 트윈룸",
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "싱글 침대 2개",
+   "싱글 침대 3개",
+   "패밀리"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 1,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "역세권",
+    "count": 1,
+    "tag": "역세권",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 1,
+    "tag": "친절",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 13,
+  "description": "인천국제공항 (6001번): T1(1층 5B) / T2(지하 1층 29번) 승차 ➔ '퇴계로5가(티마크호텔)' 또는 '동대문역사문화공원' 정류장 하차 (도보 3분)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10069819",
+  "tags": [
+   "거실",
+   "방2개이상",
+   "세탁기",
+   "주차",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y1000101565",
+  "yanolja_id": 1000101565,
+  "name": "라마다 호텔앤스위트 서울 남대문",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 중구 칠패로 27",
+  "lat": 37.560174,
+  "lng": 126.972079,
+  "capacity": 5,
+  "price_tier": 1,
+  "min_price": 50000,
+  "rating": 4.7,
+  "review_count": 1910,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피"
+  ],
+  "room_types": [
+   "3인조식★더블+싱글",
+   "4인조식★더블+싱글2",
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 1개, 싱글 침대 2개",
+   "더블 침대 2개",
+   "더블+싱글",
+   "더블+싱글2",
+   "디럭스 더블",
+   "디럭스 트리플"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "친절",
+    "count": 5,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 3,
+    "tag": "가성비",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 3,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 3,
+    "tag": "넓은객실",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 17,
+  "description": "라마다 호텔앤스위트 서울 남대문 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000101565",
+  "tags": [
+   "가성비",
+   "넓은객실",
+   "주차",
+   "청결",
+   "친절",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y3000605",
+  "yanolja_id": 3000605,
+  "name": "라마다 서울 동대문",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 중구 동호로 354",
+  "lat": 37.565865,
+  "lng": 127.002795,
+  "capacity": 5,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 3030,
+  "amenities": [
+   "TV",
+   "금연",
+   "세탁기",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 3개",
+   "더블 침대 2개",
+   "디럭스 더블 트윈",
+   "디럭스 쿼드",
+   "디럭스 퀸터플",
+   "디럭스 트리플",
+   "디럭스 패밀리 트윈",
+   "디럭스 프라임 더블",
+   "슈페리어 더블"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 2,
+    "tag": "가성비",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 22,
+  "description": "출장시, 자주 가는 숙소에요. 청결에 민감한데 아주 청결해서 좋아요! 룸도 넓구요 위치도 좋아요",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000605",
+  "tags": [
+   "거실",
+   "방2개이상",
+   "세탁기",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y3001372",
+  "yanolja_id": 3001372,
+  "name": "호텔 더 디자이너스 동대문",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 중구 퇴계로 306",
+  "lat": 37.563664,
+  "lng": 127.005626,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.3,
+  "review_count": 1,
+  "amenities": [
+   "TV",
+   "금연",
+   "와이파이",
+   "주차"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 2개",
+   "디럭스 더블",
+   "디럭스 트윈",
+   "디럭스 패밀리",
+   "디자이너스 디럭스",
+   "디자이너스 스위트 더블",
+   "디자이너스 스위트 패밀리",
+   "싱글 침대 2개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 2,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "출장",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 17,
+  "description": "위치는 DDP, 동대문시장, 쇼핑센터 등 가까워서 좋은데 시설이 오래되서 그런지 청결도는 문제가 좀 있는것 같아요..다른곳은 그런대로 있을만 한데 화장실에 곰팡이가 있고 에어켄 내부가 청소가 안되어있어 좀 지저분해요 ㅜㅜ 다만, 가격대비 가성비는 하루정도의 숙박 숙소로는 괜찮은것 같아요~",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3001372",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y10055796",
+  "yanolja_id": 10055796,
+  "name": "솔라고 명동 호텔 앤 레지던스",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 중구 충무로2길 9",
+  "lat": 37.56275659419746,
+  "lng": 126.99402917897612,
+  "capacity": 5,
+  "price_tier": 1,
+  "min_price": 55000,
+  "rating": 4.6,
+  "review_count": 57,
+  "amenities": [
+   "TV",
+   "금연",
+   "발코니",
+   "세탁기",
+   "엘리베이터",
+   "와이파이",
+   "조식",
+   "주방",
+   "주차",
+   "취사",
+   "커피",
+   "테라스",
+   "피트니스"
+  ],
+  "room_types": [
+   "• 주니어 스위트",
+   "더블 침대 1개",
+   "더블 침대 2개",
+   "더블 침대 2개, 싱글 침대 2개",
+   "디럭스 더블",
+   "디럭스 트윈",
+   "벙크 트윈",
+   "솔라고 패밀리 스위트",
+   "슈페리어 싱글",
+   "싱글 침대 1개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 6,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 3,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "조용함",
+    "count": 3,
+    "tag": "조용함",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 34,
+  "description": "명동, 을지로, 동대문 시장, 이태원 등 서울 시내 관광지로의 접근성이 뛰어나며, 강북과 강남을 대중교통으로 이동 가능한 위치에 자리잡고 있어 관광객뿐만 아니라 비즈니스를 위한 고객들에게도 최적의 입지를 자랑합니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10055796",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "도심상권",
+   "방2개이상",
+   "세탁기",
+   "조용함",
+   "주방",
+   "주차",
+   "청결",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y10057874",
+  "yanolja_id": 10057874,
+  "name": "뉴천지호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 중구 을지로38길 20 (뉴천지관광호텔)",
+  "lat": 37.565884048805735,
+  "lng": 127.00333439229182,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 5.0,
+  "review_count": 13,
+  "amenities": [
+   "TV",
+   "건조기",
+   "금연",
+   "발코니",
+   "세탁기",
+   "어메니티",
+   "와이파이",
+   "주방",
+   "주차",
+   "커피",
+   "테라스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "천지 트윈 스위트",
+   "천지 패밀리 스위트",
+   "컴팩트 더블룸 - 창문 없음",
+   "퀸 침대 1개, 싱글 침대 1개",
+   "퀸 침대 1개, 싱글 침대 2개",
+   "클래식 더블룸",
+   "클래식 트윈룸",
+   "트윈베드"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 2,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 20,
+  "description": "뉴천지호텔 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10057874",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "세탁기",
+   "주방",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y3000597",
+  "yanolja_id": 3000597,
+  "name": "스탠포드 호텔 서울",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 마포구 월드컵북로58길 15",
+  "lat": 37.581818,
+  "lng": 126.886757,
+  "capacity": 25,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.9,
+  "review_count": 10,
+  "amenities": [
+   "TV",
+   "금연",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "피트니스"
+  ],
+  "room_types": [
+   "●엑스트라베드: 디럭스트윈객실 내 설치 가능",
+   "스탠다드 더블",
+   "스탠다드 트윈",
+   "싱글 침대 2개",
+   "주니어 스위트",
+   "킹 침대 1개, 싱글 침대 1개",
+   "패밀리 트윈 스위트"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 2,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "소음",
+    "count": 2,
+    "tag": null,
+    "polarity": "-"
+   }
+  ],
+  "reviews_seen": 22,
+  "description": "스탠포드 호텔 서울 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000597",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "수영장",
+   "주차"
+  ]
+ },
+ {
+  "id": "y10055943",
+  "yanolja_id": 10055943,
+  "name": "홍대 크리에이터타운 서교",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 마포구 월드컵북로5길 41",
+  "lat": 37.55626848494122,
+  "lng": 126.91680697705667,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.3,
+  "review_count": 150,
+  "amenities": [
+   "TV",
+   "건조기",
+   "금연",
+   "반려동물",
+   "발코니",
+   "세탁기",
+   "와이파이",
+   "조식",
+   "주방",
+   "주차",
+   "커피",
+   "테라스",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 1개, 싱글 침대 2개",
+   "디럭스 더블",
+   "디럭스 트윈",
+   "수페리어 더블",
+   "수페리어 싱글",
+   "수페리어 트윈",
+   "스위트 더블",
+   "스탠다드 싱글"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 3,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 26,
+  "description": "홍대입구역, 망원역, 합정역 어디에서나 가까운 이곳은 홍대의 활기찬 기운과 서교동의 다양한 문화, 예술을 동시에 느낄 수 있는 곳입니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10055943",
+  "tags": [
+   "넓은객실",
+   "세탁기",
+   "주방",
+   "주차",
+   "친절"
+  ]
+ },
+ {
+  "id": "y10042040",
+  "yanolja_id": 10042040,
+  "name": "주니비노 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 마포구 양화진2길 31",
+  "lat": 37.547712,
+  "lng": 126.910926,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.4,
+  "review_count": 403,
+  "amenities": [
+   "TV",
+   "금연",
+   "와이파이",
+   "조식",
+   "주차"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "싱글 침대 1개, 더블 침대 1개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "조용함",
+    "count": 1,
+    "tag": "조용함",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 1,
+    "tag": "가성비",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 15,
+  "description": "주니비노 호텔 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10042040",
+  "tags": [
+   "주차"
+  ]
+ },
+ {
+  "id": "y3000607",
+  "yanolja_id": 3000607,
+  "name": "호텔 더 디자이너스 홍대",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 마포구 양화로 86",
+  "lat": 37.551947,
+  "lng": 126.917639,
+  "capacity": 10,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.2,
+  "review_count": 1257,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 2개",
+   "디럭스 더블",
+   "로얄스위트",
+   "세미스위트",
+   "스위트",
+   "스위트패밀리",
+   "스탠다드 더블"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "수영장",
+    "count": 2,
+    "tag": "수영장",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 21,
+  "description": "홍대 인근에 위치한 숙소로, 주변 편의시설과 교통 접근성이 좋고 이용이 편리하다는 점이 강점입니다. 다양한 방문 목적에 맞춰 쾌적하고 깔끔한 분위기를 제공합니다. 2박 이상 이용도 괜찮으며 재방문 의사가 높고, 위치가 특히 우수하다고 평가됩니다. 전반적으로 만족도가 높은 숙소로 보입니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000607",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "주차",
+   "친절"
+  ]
+ },
+ {
+  "id": "y3001558",
+  "yanolja_id": 3001558,
+  "name": "롯데시티호텔 마포",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 마포구 마포대로 109",
+  "lat": 37.544891,
+  "lng": 126.950607,
+  "capacity": 4,
+  "price_tier": 3,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 3520,
+  "amenities": [
+   "TV",
+   "금연",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "디럭스 더블더블",
+   "디럭스 트윈",
+   "디럭스 특가★욕조, 무료주차",
+   "디럭스 패밀리 트윈",
+   "디럭스특가★일-목 체크인, 욕조, 무료주차",
+   "슈페리어 더블",
+   "스탠다드 더블",
+   "스탠다드 더블 → 슈페리어 더블",
+   "스탠다드 모션 더블"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "수영장",
+    "count": 5,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 2,
+    "tag": "가성비",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 20,
+  "description": "특히 금융, 비즈니스 중심 지구인 여의도 및 서울역으로부터 차로 10분 이내 거리에 위치하며, 활기찬 홍대와 신촌, 명동까지 지하철로 15분이 소요됩니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3001558",
+  "tags": [
+   "거실",
+   "방2개이상",
+   "수영장",
+   "업스케일",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y1000101862",
+  "yanolja_id": 1000101862,
+  "name": "오라카이 대학로 호텔, BW 시그니처 컬렉션",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 종로구 율곡로 180",
+  "lat": 37.57562,
+  "lng": 126.99861,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 3472,
+  "amenities": [
+   "TV",
+   "금연",
+   "세탁기",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "키즈",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 2개",
+   "디럭스 스위트",
+   "레지던스 스위트",
+   "스탠다드 더블",
+   "스탠다드 트윈",
+   "싱글 침대 2개",
+   "주니어 스위트",
+   "키즈 스위트"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 6,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 3,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 19,
+  "description": "서울 종로구에 자리하고 있는 4성급 오라카이 대학로 호텔, BW 시그니처 컬렉션은 동대문, 창경궁 1km, 명동과는 3km 내에 위치하고 있으며,",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000101862",
+  "tags": [
+   "넓은객실",
+   "세탁기",
+   "주차",
+   "청결",
+   "친절",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y10056524",
+  "yanolja_id": 10056524,
+  "name": "더프리마호텔 종로",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 종로구 우정국로 46 (천마빌딩)",
+  "lat": 37.5731064133589,
+  "lng": 126.9833386032019,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.9,
+  "review_count": 104,
+  "amenities": [
+   "TV",
+   "건조기",
+   "금연",
+   "세탁기",
+   "엘리베이터",
+   "와이파이",
+   "조식",
+   "주차",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "디럭스 더블",
+   "디럭스 트윈",
+   "로얄 더블",
+   "로얄 스위트",
+   "슈페리어 트윈",
+   "스탠다드 → 디럭스 트윈 or 패밀리 트리플",
+   "스탠다드 더블",
+   "스탠다드 싱글",
+   "스탠다드 트윈"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 8,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 6,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 22,
+  "description": "더프리마호텔 종로 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10056524",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "세탁기",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y1000102261",
+  "yanolja_id": 1000102261,
+  "name": "나인트리 바이 파르나스 서울 인사동",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 종로구 인사동길 49",
+  "lat": 37.574521,
+  "lng": 126.983851,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 3068,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "키즈",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 2층 침대 1개",
+   "디럭스 더블",
+   "디럭스 트윈",
+   "라이브특가★당일 패밀리트윈 무료업그레이드, 유료주차",
+   "스탠다드 → 패밀리 트윈",
+   "스탠다드 더블",
+   "스탠다드 더블 → 디럭스 더블",
+   "스탠다드 트윈",
+   "스탠다드 트윈 → 디럭스 트윈"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 6,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 5,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 23,
+  "description": "나인트리 바이 파르나스 서울 인사동 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000102261",
+  "tags": [
+   "거실",
+   "방2개이상",
+   "주차",
+   "청결",
+   "친절",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y1000110157",
+  "yanolja_id": 1000110157,
+  "name": "종로 호텔케이월드",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 종로구 수표로18길 28",
+  "lat": 37.569207,
+  "lng": 126.991273,
+  "capacity": 2,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.4,
+  "review_count": 142,
+  "amenities": [
+   "TV",
+   "금연",
+   "와이파이",
+   "주차"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "디럭스 더블",
+   "스위트 더블",
+   "스위트, 로얄 스위트 객실 혼숙 금지",
+   "스위트,로얄스위트 객실에 스타일러 비치"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 2,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "커플",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 19,
+  "description": "위치가 살짝 애매하긴햇지만 종로3가 역에서는 가까워서 좋아요!! 객실은 깨끗하고 에어컨 잘나오는데 화장실때문에 약간 습해요ㅠㅠ",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000110157",
+  "tags": [
+   "넓은객실",
+   "주차"
+  ]
+ },
+ {
+  "id": "y3001571",
+  "yanolja_id": 3001571,
+  "name": "IBC 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 종로구 난계로 241",
+  "lat": 37.573254375820845,
+  "lng": 127.02284199456268,
+  "capacity": 2,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.9,
+  "review_count": 0,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "와이파이",
+   "조식",
+   "주차",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "스탠다드 더블",
+   "스탠다드 트윈",
+   "싱글 침대 2개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 1,
+    "tag": "넓은객실",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 16,
+  "description": "IBC 호텔 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3001571",
+  "tags": [
+   "주차"
+  ]
+ },
+ {
+  "id": "y3016041",
+  "yanolja_id": 3016041,
+  "name": "잠실 포레스타 2 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 송파구 백제고분로7길 23-5",
+  "lat": 37.510915,
+  "lng": 127.081374,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.3,
+  "review_count": 654,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "어메니티",
+   "와이파이",
+   "주차"
+  ],
+  "room_types": [
+   "※ 1303호,1304호 로얄스위트 객실안내",
+   "※ 로얄스위트 1303호 안내사항※",
+   "※ 로얄스위트 1304호 안내사항※",
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 2개",
+   "디럭스 더블",
+   "디럭스 트윈",
+   "로얄 스위트 1303호",
+   "로얄 스위트 1304호"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 7,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 5,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "조용함",
+    "count": 3,
+    "tag": "조용함",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 37,
+  "description": "퇴실 전 객실 내 개인 소지품을 꼭 확인해 주시기 바랍니다. 분실물 발생 시 도움을 드리기 어려울 수 있는 점 양해 부탁드립니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3016041",
+  "tags": [
+   "넓은객실",
+   "조용함",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y3000793",
+  "yanolja_id": 3000793,
+  "name": "레이크 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 송파구 석촌호수로 216",
+  "lat": 37.506831,
+  "lng": 127.100985,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 732,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "주차",
+   "커피"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 2개",
+   "더블룸",
+   "더블룸 - 2층",
+   "디럭스 더블",
+   "디럭스 트윈",
+   "스위트 트윈룸",
+   "스위트룸",
+   "싱글 침대 3개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 4,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 4,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 25,
+  "description": "위치도 바로 길건너 롯데월드이고 바로 산책로 연결이 되있어 편리하고 시설.서비스.청결 모두 5성급입니다",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000793",
+  "tags": [
+   "넓은객실",
+   "주차",
+   "청결",
+   "친절",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y10040392",
+  "yanolja_id": 10040392,
+  "name": "시그니엘 서울",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울 송파구 올림픽로 300 11번 출구",
+  "lat": 37.51257,
+  "lng": 127.102563,
+  "capacity": 2,
+  "price_tier": 1,
+  "min_price": 44000,
+  "rating": 5.0,
+  "review_count": 417,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "피트니스"
+  ],
+  "room_types": [
+   "그랜드 디럭스 더블 리버뷰",
+   "그랜드 디럭스 더블 시닉배스뷰",
+   "그랜드 디럭스 더블 시티뷰",
+   "더블 침대 1개",
+   "시그니엘 프리미어 더블 시티뷰",
+   "시그니엘 프리미어 트윈 시티뷰",
+   "싱글 침대 2개",
+   "프리미어 더블 리버뷰",
+   "프리미어 더블 시닉배스뷰",
+   "프리미어 더블 시티뷰"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "전망",
+    "count": 10,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 4,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 1,
+    "tag": "키즈",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 25,
+  "description": "국내 최고층 건물인 롯데월드타워 76층~101층에 위치한 시그니엘서울은 한국의 아름다움을 현대적인 감각으로 풀어낸 객실(235실)에서 서울의 파노라믹한 스카이라인과 환상적인 야경을 조망할 수 있으며 일몰과 일출을 한 자리에서 감상할 수 있는 국내 유일의 호텔입니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10040392",
+  "tags": [
+   "가성비",
+   "넓은객실",
+   "수영장",
+   "주차",
+   "친절"
+  ]
+ },
+ {
+  "id": "y3001221",
+  "yanolja_id": 3001221,
+  "name": "롯데호텔 월드",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 송파구 올림픽로 240",
+  "lat": 37.511235,
+  "lng": 127.098027,
+  "capacity": 3,
+  "price_tier": 1,
+  "min_price": 60000,
+  "rating": 4.9,
+  "review_count": 1062,
+  "amenities": [
+   "TV",
+   "금연",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "키즈",
+   "피트니스"
+  ],
+  "room_types": [
+   "※ 클럽 디럭스 객실은 사전 확정 요청 불가"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "전망",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "수영장",
+    "count": 3,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 3,
+    "tag": "가성비",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 3,
+    "tag": "키즈",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 46,
+  "description": "롯데호텔 월드 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3001221",
+  "tags": [
+   "가성비",
+   "수영장",
+   "주차",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y10055899",
+  "yanolja_id": 10055899,
+  "name": "모던 용산 한옥",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 용산구 백범로90길 90 (용산kcc웰츠타워)",
+  "lat": 37.537746510815175,
+  "lng": 126.9688330629956,
+  "capacity": 12,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.9,
+  "review_count": 552,
+  "amenities": [
+   "TV",
+   "건조기",
+   "금연",
+   "세탁기",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주방",
+   "주차"
+  ],
+  "room_types": [
+   "킹 침대 1개, 슈퍼싱글 침대 1개",
+   "킹 침대 2개, 싱글 침대 1개",
+   "킹 침대 4개, 슈퍼싱글 침대 2개",
+   "패밀리",
+   "한국의 온돌을 표현하려한건지 바닥이 뜨끈뜨끈..🔥"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 7,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 5,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 4,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 46,
+  "description": "해당 위치는 1호선, 경의중앙선, 6호선, 간선버스등 과 인접하여 남산 타워, 한강, 홍대, 명동, 이태원, 경복궁 등과 가까우며, 어디든 가실 때 편하실 것입니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10055899",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "세탁기",
+   "주방",
+   "주차",
+   "청결",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y3009440",
+  "yanolja_id": 3009440,
+  "name": "호텔 더 디자이너스 서울역",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 용산구 한강대로 305",
+  "lat": 37.545525,
+  "lng": 126.971543,
+  "capacity": 6,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.6,
+  "review_count": 1207,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "디럭스 더블 타워뷰",
+   "디자이너스 스위트 A",
+   "디자이너스 스위트 B",
+   "슈페리어 더블 시티뷰",
+   "슈페리어 트윈",
+   "스위트A",
+   "스위트B",
+   "싱글 침대 2개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "친절",
+    "count": 4,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 3,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 25,
+  "description": "숙대입구역 10번 출구 바로 앞이라서 접근성 최고입니다. 서울역이랑도 가깝구요. 출장에 딱입니다",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3009440",
+  "tags": [
+   "넓은객실",
+   "역세권",
+   "주차",
+   "청결",
+   "친절",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y10048873",
+  "yanolja_id": 10048873,
+  "name": "나인트리 프리미어 로카우스 호텔 서울 용산",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 용산구 한강대로23길 25",
+  "lat": 37.52764060666328,
+  "lng": 126.96434942604265,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 649,
+  "amenities": [
+   "TV",
+   "금연",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "피트니스"
+  ],
+  "room_types": [
+   "가든 스위트",
+   "나인트리 프리미어 로카우스 호텔 서울 용산",
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 1개, 싱글 침대 2개",
+   "레지던스 스위트",
+   "레지던스 스위트 - 한강뷰",
+   "레지던스 스위트 쿼드룸",
+   "스탠다드 더블",
+   "스탠다드 더블 - 한강뷰"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "수영장",
+    "count": 5,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 40,
+  "description": "서울 호캉스를 알아보다가 접근성 좋은 용산역 바로앞에 위치한 나인트리 프리미어 로카우스 호텔 서울 용산!! 정말 기대 이상으로 호텔시설, 애프터눈 티,",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10048873",
+  "tags": [
+   "넓은객실",
+   "수영장",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y3000655",
+  "yanolja_id": 3000655,
+  "name": "해밀톤 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "서울",
+  "address": "서울특별시 용산구 이태원로 179",
+  "lat": 37.53473,
+  "lng": 126.994128,
+  "capacity": 2,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 0,
+  "amenities": [
+   "TV",
+   "금연",
+   "수영장",
+   "어메니티",
+   "에어컨",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피"
+  ],
+  "room_types": [
+   "더블 침대 1개, 싱글 침대 1개",
+   "디럭스 트윈",
+   "스탠다드 트윈",
+   "싱글 침대 2개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "소음",
+    "count": 5,
+    "tag": null,
+    "polarity": "-"
+   },
+   {
+    "keyword": "위치",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 2,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 2,
+    "tag": "넓은객실",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 27,
+  "description": "해밀턴 호텔이 특급 호텔로 승격되었답니다! 전 객실 리모델링 완료! 핫한 이태원 중심에서 특급 서비스의 품격을 느껴보세요~",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000655",
+  "tags": [
+   "수영장",
+   "주차"
+  ]
+ },
+ {
+  "id": "y1000110883",
+  "yanolja_id": 1000110883,
+  "name": "그랜드 조선 부산",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 해운대구 해운대해변로 292",
+  "lat": 35.160064,
+  "lng": 129.163126,
+  "capacity": 2,
+  "price_tier": 1,
+  "min_price": 63000,
+  "rating": 4.9,
+  "review_count": 1570,
+  "amenities": [
+   "TV",
+   "금연",
+   "수영장",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "키즈",
+   "피트니스"
+  ],
+  "room_types": [
+   "※ 트윈 객실에는 엑스트라베드 설치 불가",
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 1개, 유아용 침대 1개",
+   "더블 침대 2개",
+   "디럭스 시티 킹",
+   "디럭스 시티 패밀리 트윈",
+   "디럭스 오션 킹",
+   "디럭스 오션 패밀리 트윈",
+   "디럭스 파셜 오션 킹"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "친절",
+    "count": 12,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 9,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 5,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 3,
+    "tag": "주차",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 35,
+  "description": "요청사항 100% 반영해주셔서 15층 바다가 한 눈에 보이는 방으로 배정👍 방 컨디션 최상~! 침구 컨디션 최상~~!! 아리아 석식도 퀄리티 최최상♡ 조식도 맛있었구요^^ 불편한 점 하나 없이 너무 편하게 호캉스 즐기고 갑니다앙^^ 부산 여행 올 때마다 생각 날 것 같고 숙소 픽 해 두고 떠납니다👋",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000110883",
+  "tags": [
+   "가성비",
+   "거실",
+   "바다뷰",
+   "방2개이상",
+   "수영장",
+   "주차",
+   "청결",
+   "친절",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y3010790",
+  "yanolja_id": 3010790,
+  "name": "엘리시아",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 해운대구 구남로 49",
+  "lat": 35.160187,
+  "lng": 129.16221,
+  "capacity": 6,
+  "price_tier": 2,
+  "min_price": 100000,
+  "rating": 4.3,
+  "review_count": 4475,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차"
+  ],
+  "room_types": [
+   "※객실정보: 패밀리 더블",
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 2개",
+   "더블 침대 3개",
+   "라메르 디럭스 오션 1001",
+   "라메르 디럭스 오션 1101",
+   "라메르 시티 온돌",
+   "라메르 오션 더블",
+   "라메르 오션 온돌"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "전망",
+    "count": 6,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 4,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 4,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "해변",
+    "count": 2,
+    "tag": "해변",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 30,
+  "description": "오션뷰 _ 스탠다드 / 디럭스, 패밀리_ 더블(시티뷰) 객실의 욕조 옵션은 예약 시, 배정 가능유무에 대해 프론트로 확인 및 사전 요청 부탁드립니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3010790",
+  "tags": [
+   "거실",
+   "바다뷰",
+   "방2개이상",
+   "주차",
+   "친절"
+  ]
+ },
+ {
+  "id": "y3001112",
+  "yanolja_id": 3001112,
+  "name": "파라다이스 호텔 부산",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 해운대구 해운대해변로 296",
+  "lat": 35.160134,
+  "lng": 129.164688,
+  "capacity": 3,
+  "price_tier": 1,
+  "min_price": 44000,
+  "rating": 4.9,
+  "review_count": 2815,
+  "amenities": [
+   "TV",
+   "금연",
+   "발코니",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "키즈",
+   "테라스",
+   "피트니스"
+  ],
+  "room_types": [],
+  "review_keywords": [
+   {
+    "keyword": "침구",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "수영장",
+    "count": 5,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 3,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "해변",
+    "count": 2,
+    "tag": "해변",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 21,
+  "description": "바다에서 놀다가 바로 들어와도 입구에 모래 터는 곳과 수건이 비치되어 있어서 해운대 해수욕장에서 물놀이 하실 분이라면 파라다이스가 위치적으로 최고 같아요. 주변 5성급 호텔 다 이용해봤지만 저는 파라다이스 추천합니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3001112",
+  "tags": [
+   "가성비",
+   "바다뷰",
+   "수영장",
+   "주차",
+   "친절",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y3009846",
+  "yanolja_id": 3009846,
+  "name": "라마다 앙코르 바이 윈덤 부산 해운대",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 해운대구 구남로 9",
+  "lat": 35.163232,
+  "lng": 129.159548,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 3586,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 2개",
+   "디럭스 트윈",
+   "디럭스 트윈 → 패밀리 트윈",
+   "슈퍼싱글 침대 2개",
+   "슈페리어 더블",
+   "싱글 침대 3개",
+   "코너 스위트 더블",
+   "코너 스위트 트윈",
+   "퀸 침대 1개, 슈퍼싱글 침대 1개",
+   "퀸 침대 1개, 싱글 침대 1개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 4,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "편의점",
+    "count": 3,
+    "tag": "편의점 인접",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 32,
+  "description": "라마다 앙코르 바이 윈덤 부산 해운대 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3009846",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "바다뷰",
+   "방2개이상",
+   "주차",
+   "편의점 인접",
+   "해변"
+  ]
+ },
+ {
+  "id": "y10043211",
+  "yanolja_id": 10043211,
+  "name": "엘시티레지던스 와이컬렉션",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 해운대구 달맞이길 30",
+  "lat": 35.161064,
+  "lng": 129.168377,
+  "capacity": 9,
+  "price_tier": 1,
+  "min_price": 49800,
+  "rating": 4.8,
+  "review_count": 755,
+  "amenities": [
+   "TV",
+   "금연",
+   "넷플릭스",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주방",
+   "주차",
+   "커피",
+   "키즈"
+  ],
+  "room_types": [
+   "슈퍼브 오션뷰 로얄스위트 - 미포하버뷰",
+   "슈퍼브 오션뷰 스위트 - 미포하버뷰",
+   "키즈 파노라마 오션뷰 로얄 스위트",
+   "킹 침대 1개, 싱글 침대 1개, 침구 1개",
+   "파노라마 오션뷰 로얄스위트 - 해운대 비치뷰",
+   "파노라마 오션뷰 스위트 - 해운대 비치뷰",
+   "패밀리"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "전망",
+    "count": 7,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 5,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 3,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 30,
+  "description": "-전 객실 금연. 객실 내 흡연 행위 또는 흡연 정황 확인 시 과태료 500,000만 원부터 발생됨.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10043211",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "바다뷰",
+   "방2개이상",
+   "주방",
+   "주차",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y1000111341",
+  "yanolja_id": 1000111341,
+  "name": "시그니엘 부산",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 해운대구 달맞이길 30",
+  "lat": 35.15967,
+  "lng": 129.170284,
+  "capacity": 3,
+  "price_tier": 1,
+  "min_price": 40000,
+  "rating": 4.9,
+  "review_count": 939,
+  "amenities": [
+   "TV",
+   "금연",
+   "발코니",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "키즈",
+   "테라스",
+   "피트니스"
+  ],
+  "room_types": [
+   "그랜드 디럭스 더블 미포하버뷰 달맞이길 전망",
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "디럭스 스위트 더블 미포하버뷰 달맞이길 전망",
+   "디럭스 스위트 트윈 미포하버뷰 달맞이길 전망",
+   "시그니엘 프리미어 더블 미포하버뷰 달맞이길 전망",
+   "시그니엘 프리미어 더블 오션뷰",
+   "시그니엘 프리미어 트윈 미포하버뷰 달맞이길 전망",
+   "시그니엘 프리미어 패밀리트윈 시티뷰",
+   "시그니엘 프리미어 패밀리트윈 오션뷰"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "수영장",
+    "count": 6,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 5,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 49,
+  "description": "건물 앞으로 오시면 해운대로 쭉 이어져 있어서 요즘 해운대 앞바다에사 불빛 축제하는것도 천천히 거닐다보면 구경할수 있구요~ 부산시장도 가깝답니다! ㅎㅎ",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000111341",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "수영장",
+   "주차",
+   "청결",
+   "친절",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y3011793",
+  "yanolja_id": 3011793,
+  "name": "브라운도트 초읍점",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 부산진구 새싹로278번길 11",
+  "lat": 35.180975,
+  "lng": 129.047823,
+  "capacity": 5,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 5.0,
+  "review_count": 0,
+  "amenities": [
+   "TV",
+   "금연",
+   "발코니",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "테라스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 2개",
+   "디럭스",
+   "디럭스 트윈",
+   "스위트",
+   "스탠다드 트윈",
+   "싱글 침대 1개, 더블 침대 1개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "냄새",
+    "count": 1,
+    "tag": null,
+    "polarity": "-"
+   },
+   {
+    "keyword": "친절",
+    "count": 1,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "응대불만",
+    "count": 1,
+    "tag": null,
+    "polarity": "-"
+   }
+  ],
+  "reviews_seen": 16,
+  "description": "브라운도트 초읍점 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3011793",
+  "tags": [
+   "넓은객실",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y3014278",
+  "yanolja_id": 3014278,
+  "name": "서면 사우스반데코 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 부산진구 서면로 6",
+  "lat": 35.150963,
+  "lng": 129.058343,
+  "capacity": 6,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.9,
+  "review_count": 223,
+  "amenities": [
+   "TV",
+   "금연",
+   "넷플릭스",
+   "발코니",
+   "어메니티",
+   "엘리베이터",
+   "와이파이",
+   "주차",
+   "테라스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 2개, 싱글 침대 2개",
+   "디럭스 더블 - 욕조, 테라스",
+   "스탠다드 더블 - 테라스",
+   "스탠다드 트윈 - 테라스",
+   "싱글 침대 2개",
+   "싱글 침대 3개",
+   "트리플 싱글 - 테라스",
+   "패밀리 - 파티룸"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 6,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "냄새",
+    "count": 3,
+    "tag": null,
+    "polarity": "-"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 19,
+  "description": "서면 사우스반데코 호텔 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3014278",
+  "tags": [
+   "거실",
+   "도심상권",
+   "방2개이상",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y10061464",
+  "yanolja_id": 10061464,
+  "name": "어반그루브 호텔(서면점)",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 부산진구 황령대로17번길 18",
+  "lat": 35.14883736202192,
+  "lng": 129.06140420908838,
+  "capacity": 6,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 5.0,
+  "review_count": 24,
+  "amenities": [
+   "TV",
+   "건조기",
+   "금연",
+   "세탁기",
+   "스타일러",
+   "어메니티",
+   "와이파이",
+   "주방",
+   "주차"
+  ],
+  "room_types": [
+   "스탠다드 더블",
+   "싱글 침대 3개",
+   "어반그루브호텔 프리미어스위트 완전 추천합니다!",
+   "트리플 싱글",
+   "트윈베드",
+   "패밀리",
+   "프리미어 디럭스",
+   "프리미어 스위트",
+   "프리미어 트윈",
+   "프리미어 패밀리"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "넓음",
+    "count": 4,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 4,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 32,
+  "description": "당신이 부산 시내 근처에서 숙박을 고민한다면 고민말고 여기로...아주 깨끗하고 위치도 좀만 걸으면 서면이고 택시타면 기본요금으로 왔다갔다 가능 아주 좋아연",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10061464",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "도심상권",
+   "방2개이상",
+   "세탁기",
+   "주방",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y3014904",
+  "yanolja_id": 3014904,
+  "name": "부산 서면 아이비 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 부산진구 서면로 15-14",
+  "lat": 35.152236,
+  "lng": 129.057284,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.4,
+  "review_count": 0,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차"
+  ],
+  "room_types": [
+   "더블 침대 1개, 싱글 침대 1개",
+   "디럭스",
+   "트윈베드",
+   "패밀리",
+   "패밀리 스위트 트윈룸"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "냄새",
+    "count": 1,
+    "tag": null,
+    "polarity": "-"
+   }
+  ],
+  "reviews_seen": 12,
+  "description": "각종 컨셉을 담은 넓고 깔끔한 객실은 고객님들의 쾌적하고 안락한 휴식을 보장합니다. 아이비 호텔에서 특별한 추억을 쌓아보세요.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3014904",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "도심상권",
+   "방2개이상",
+   "주차"
+  ]
+ },
+ {
+  "id": "y10051473",
+  "yanolja_id": 10051473,
+  "name": "메종 드 센텀 부산 광안점",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 수영구 수영로680번길 14",
+  "lat": 35.16622682976524,
+  "lng": 129.1156850071481,
+  "capacity": 2,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 22,
+  "amenities": [
+   "TV",
+   "금연",
+   "넷플릭스",
+   "스타일러",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "트윈베드"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 1,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 20,
+  "description": "메종 드 센텀 부산 광안점 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10051473",
+  "tags": [
+   "바다뷰",
+   "주차",
+   "청결",
+   "해변"
+  ]
+ },
+ {
+  "id": "y3000637",
+  "yanolja_id": 3000637,
+  "name": "호텔 아쿠아 펠리스",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 수영구 광안해변로 225",
+  "lat": 35.154032,
+  "lng": 129.118782,
+  "capacity": 5,
+  "price_tier": 1,
+  "min_price": 40000,
+  "rating": 4.4,
+  "review_count": 2946,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "키즈",
+   "테라스",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 2개",
+   "디럭스 더블",
+   "디럭스 더블 - 리모델링 객실",
+   "디럭스 더블 → 오션시티 더블",
+   "디럭스 패밀리 트윈",
+   "디럭스 패밀리 트윈  - 리모델링",
+   "스위트룸",
+   "싱글 침대 1개, 더블 침대 1개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "바다뷰",
+    "count": 7,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 26,
+  "description": "하늘 위에서 펼쳐지는 오션뷰와 광안대교 야경의 절경을 동시에 감상할 수 있는 유일무이한 전망 공간",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000637",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "바다뷰",
+   "방2개이상",
+   "수영장",
+   "주차",
+   "청결",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y3000602",
+  "yanolja_id": 3000602,
+  "name": "호텔 호메르스 광안리",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 수영구 광안해변로 217",
+  "lat": 35.153427,
+  "lng": 129.117996,
+  "capacity": 10,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 3006,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "테라스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 2개",
+   "디럭스 시티 더블",
+   "디럭스 오션 더블",
+   "디럭스 오션 더블 → 프리미엄 오션 더블",
+   "디럭스 오션 트윈",
+   "비즈니스 시티 더블",
+   "비즈니스 시티 더블 → 디럭스 오션 더블",
+   "비즈니스 시티 트윈",
+   "비즈니스 시티 트윈 → 디럭스 오션 트윈"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "전망",
+    "count": 9,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 8,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 7,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 6,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "해변",
+    "count": 6,
+    "tag": "해변",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 27,
+  "description": "아침에 본 야경도 너무 예쁘고 좋았구요! 바다뷰로 예약하시면 너무 좋으실 거에요!!♡ 완전 강추합니다 ㅎㅎ",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000602",
+  "tags": [
+   "넓은객실",
+   "바다뷰",
+   "주차",
+   "청결",
+   "해변"
+  ]
+ },
+ {
+  "id": "y3017989",
+  "yanolja_id": 3017989,
+  "name": "베스트 루이스 해밀턴 광안점",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 수영구 광안해변로 276",
+  "lat": 35.155605,
+  "lng": 129.124009,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.2,
+  "review_count": 1167,
+  "amenities": [
+   "TV",
+   "금연",
+   "와이파이",
+   "주차",
+   "커피"
+  ],
+  "room_types": [
+   "더블 침대 1개, 싱글 침대 1개",
+   "스위트 오션뷰",
+   "시그니처 트윈"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 1,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 1,
+    "tag": "가성비",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 25,
+  "description": "전 객실 최첨단 IOT 기가지니 사용 ('지니야'라고 불러주신 다음 커튼 열어줘, 불꺼줘 등 말 한마디로 모든게 이루어지는 최첨단 호텔)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3017989",
+  "tags": [
+   "넓은객실",
+   "바다뷰",
+   "주차",
+   "청결",
+   "해변"
+  ]
+ },
+ {
+  "id": "y3000745",
+  "yanolja_id": 3000745,
+  "name": "코모도호텔 부산",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 중구 중구로 151",
+  "lat": 35.109065,
+  "lng": 129.035447,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.6,
+  "review_count": 3190,
+  "amenities": [
+   "TV",
+   "금연",
+   "수영장",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 1개, 싱글 침대 2개",
+   "더블 침대 2개",
+   "디럭스 더블 시티뷰",
+   "디럭스 더블 하버뷰",
+   "비즈니스 트윈",
+   "비즈니스 트윈 → 스탠다드 트윈",
+   "스탠다드 더블",
+   "스탠다드 더블 → 프리미어 스탠다드 더블"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 8,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "소음",
+    "count": 3,
+    "tag": null,
+    "polarity": "-"
+   }
+  ],
+  "reviews_seen": 42,
+  "description": "코모도호텔 부산 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000745",
+  "tags": [
+   "넓은객실",
+   "수영장",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y3001478",
+  "yanolja_id": 3001478,
+  "name": "남포 부산 관광 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 중구 광복로97번길 23",
+  "lat": 35.100418,
+  "lng": 129.034644,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 3.9,
+  "review_count": 0,
+  "amenities": [
+   "TV",
+   "금연",
+   "와이파이",
+   "주차"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "슈페리어 더블",
+   "슈페리어 트윈",
+   "스탠다드 더블",
+   "스탠다드 트윈",
+   "싱글 침대 1개, 더블 침대 1개",
+   "싱글 침대 2개",
+   "싱글 침대 3개",
+   "패밀리 트윈"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 6,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 3,
+    "tag": "가성비",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 3,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 24,
+  "description": "위치랑 가성비는 최고인듯해요~ 남포역이랑 너무 가까워서 버스랑 지하철 이용하기 편하고 좋았구요",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3001478",
+  "tags": [
+   "가성비",
+   "거실",
+   "방2개이상",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y3009352",
+  "yanolja_id": 3009352,
+  "name": "호텔공감공간 부산역점",
+  "brand": null,
+  "is_handys": false,
+  "region": "부산",
+  "address": "부산광역시 중구 충장대로9번길 64",
+  "lat": 35.110773,
+  "lng": 129.039293,
+  "capacity": 5,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.5,
+  "review_count": 283,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "더블 침대 1개, 퀸 침대 1개",
+   "더블 침대 2개",
+   "더블 침대 2개, 싱글 침대 1개",
+   "디럭스 더블",
+   "디럭스 트윈",
+   "스탠다드 트윈",
+   "트윈베드",
+   "패밀리 트리플"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 3,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 1,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 1,
+    "tag": "가성비",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 18,
+  "description": "부산 여행의 최적의 위치와 합리적인 가격, 한층 더 업그레이드된 편안함을 선사합니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3009352",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "도심상권",
+   "방2개이상",
+   "역세권",
+   "주방",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y10055957",
+  "yanolja_id": 10055957,
+  "name": "UH 플랫 더 속초",
+  "brand": null,
+  "is_handys": false,
+  "region": "강원",
+  "address": "강원특별자치도 속초시 중앙로 172-11",
+  "lat": 38.2060779,
+  "lng": 128.5934237,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 3152,
+  "amenities": [
+   "TV",
+   "금연",
+   "넷플릭스",
+   "어메니티",
+   "와이파이",
+   "주방",
+   "주차",
+   "키즈"
+  ],
+  "room_types": [
+   "패밀리",
+   "패밀리서비스"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "전망",
+    "count": 15,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 9,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 8,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 6,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 6,
+    "tag": "친절",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 39,
+  "description": "UH 플랫 더 속초 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10055957",
+  "tags": [
+   "거실",
+   "바다뷰",
+   "방2개이상",
+   "주방",
+   "주차",
+   "청결",
+   "친절",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y3001713",
+  "yanolja_id": 3001713,
+  "name": "라마다 속초 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "강원",
+  "address": "강원도 속초시 대포항희망길 106",
+  "lat": 38.1740687,
+  "lng": 128.6098406,
+  "capacity": 4,
+  "price_tier": 1,
+  "min_price": 40000,
+  "rating": 4.8,
+  "review_count": 5627,
+  "amenities": [
+   "TV",
+   "금연",
+   "발코니",
+   "와이파이",
+   "조식",
+   "주차",
+   "테라스",
+   "피트니스"
+  ],
+  "room_types": [
+   "디럭스 더블 오션하버뷰",
+   "디럭스 오션 더블 파노라마오션뷰",
+   "디럭스 오션 트리플 파노라마오션뷰",
+   "디럭스 오션 패밀리 트윈 파노라마오션뷰",
+   "디럭스 트윈 오션하버뷰",
+   "디럭스 패밀리 트윈 오션하버뷰",
+   "슈퍼싱글 침대 1개, 퀸 침대 1개",
+   "슈퍼싱글 침대 2개",
+   "슈퍼싱글 침대 3개",
+   "스탠다드 더블 발코니파셜오션뷰"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "바다뷰",
+    "count": 8,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 7,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 5,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "좁음",
+    "count": 4,
+    "tag": null,
+    "polarity": "-"
+   }
+  ],
+  "reviews_seen": 32,
+  "description": "라마다 속초 호텔은 대포항 인근에 자리잡은 4성급 호텔로, 속초 최고의 파노라마 오션뷰를 자랑합니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3001713",
+  "tags": [
+   "가성비",
+   "거실",
+   "바다뷰",
+   "방2개이상",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y3016536",
+  "yanolja_id": 3016536,
+  "name": "롯데리조트 속초",
+  "brand": null,
+  "is_handys": false,
+  "region": "강원",
+  "address": "강원도 속초시 대포항길 186",
+  "lat": 38.180652,
+  "lng": 128.613376,
+  "capacity": 8,
+  "price_tier": 1,
+  "min_price": 55000,
+  "rating": 4.8,
+  "review_count": 1358,
+  "amenities": [
+   "TV",
+   "금연",
+   "바베큐",
+   "발코니",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "취사",
+   "커피",
+   "키즈",
+   "테라스",
+   "피트니스"
+  ],
+  "room_types": [
+   "그랜드 디럭스 패밀리 트윈",
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 1개, 싱글 침대 2개",
+   "더블 침대 2개",
+   "디럭스 18평",
+   "디럭스 더블",
+   "디럭스 패밀리 트윈",
+   "슈페리어 스위트",
+   "슈페리어 스위트 위드 템퍼"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "넓음",
+    "count": 5,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 5,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 4,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "수영장",
+    "count": 3,
+    "tag": "수영장",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 21,
+  "description": "처음 방문한 롯데리조트 속초~~일단 객실을 비롯해서 건물 자체나 시설이 깔끔했고 객실이 넓어서 쾌적하고 침대나 침구 모두 만족함.2박 3일 동안 바다뷰를 봐서 행복했고 인피니트 풀은 규모에 비해 사람이 많아서 다소 즐기지 못 했으나 가격만 빼고는 재방문하고 싶음.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3016536",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "리조트인접",
+   "바다뷰",
+   "방2개이상",
+   "수영장",
+   "주방",
+   "주차",
+   "청결",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y10056999",
+  "yanolja_id": 10056999,
+  "name": "카시아 속초",
+  "brand": null,
+  "is_handys": false,
+  "region": "강원",
+  "address": "강원특별자치도 속초시 대포항희망길 120",
+  "lat": 38.17536490602921,
+  "lng": 128.60987292953095,
+  "capacity": 6,
+  "price_tier": 1,
+  "min_price": 66000,
+  "rating": 4.7,
+  "review_count": 826,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "수영장",
+   "어메니티",
+   "엘리베이터",
+   "와이파이",
+   "조식",
+   "주방",
+   "주차",
+   "키즈",
+   "피트니스"
+  ],
+  "room_types": [
+   "디럭스 스위트 - 부분 바다 전망",
+   "디럭스 킹 - 부분 바다 전망",
+   "디럭스 투 베드 룸 스위트 - 바다 전망",
+   "디럭스 트윈 - 바다 전망",
+   "수페리어 트윈 - 펫동반 가능객실",
+   "수페리어 트윈 - 항구 전망",
+   "싱글 침대 2개",
+   "주니어 스위트 킹 - 항구 전망",
+   "주니어 스위트 트윈 - 항구 전망",
+   "킹 침대 1개, 싱글 침대 2개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "바다뷰",
+    "count": 6,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "수영장",
+    "count": 5,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 35,
+  "description": "동해와 설악산 사이에 위치한 카시아 속초는 반얀그룹 포트폴리오에 속한 전 객실 바다 전망의 프리미엄 리조트입니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10056999",
+  "tags": [
+   "가성비",
+   "넓은객실",
+   "바다뷰",
+   "수영장",
+   "주방",
+   "주차",
+   "청결",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y3013409",
+  "yanolja_id": 3013409,
+  "name": "스카이베이 호텔 경포",
+  "brand": null,
+  "is_handys": false,
+  "region": "강원",
+  "address": "강원특별자치도 강릉시 해안로 476 (스카이베이 경포호텔)",
+  "lat": 37.804423,
+  "lng": 128.907582,
+  "capacity": 4,
+  "price_tier": 1,
+  "min_price": 45000,
+  "rating": 4.7,
+  "review_count": 8093,
+  "amenities": [
+   "TV",
+   "금연",
+   "발코니",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "테라스",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개, 2층 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 1개, 킹 침대 1개",
+   "디럭스 더블 레이크뷰",
+   "디럭스 트윈 소나무 or 호수전망",
+   "디럭스 트윈-3인 소나무 or 호수전망",
+   "디럭스 패밀리 트윈 레이크뷰 or 소나무뷰",
+   "로얄스위트 오션뷰",
+   "스탠다드 더블 부분 호수 전망",
+   "이그제큐티브 더블 오션뷰"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "친절",
+    "count": 5,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 4,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "수영장",
+    "count": 4,
+    "tag": "수영장",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 41,
+  "description": "내부 부대시설도 잘 되어있고요. 호텔 밖 나가자마자 바로앞이 바다와 호수 그리고 식당들이 즐비한것도 너무 좋고",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3013409",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "바다뷰",
+   "방2개이상",
+   "수영장",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y1000114130",
+  "yanolja_id": 1000114130,
+  "name": "정동진 썬크루즈 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "강원",
+  "address": "강원도 강릉시 강동면 헌화로 950-39",
+  "lat": 37.683484,
+  "lng": 129.042166,
+  "capacity": 8,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.6,
+  "review_count": 156,
+  "amenities": [
+   "TV",
+   "금연",
+   "수영장",
+   "와이파이",
+   "조식",
+   "주차",
+   "키즈",
+   "테라스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 2개",
+   "듀플렉스 스위트 더블",
+   "듀플렉스 스위트 트윈 A",
+   "듀플렉스 스위트 트윈 B",
+   "콘도 디럭스 트윈 오션뷰",
+   "콘도 디럭스 트윈 일출 하프오션뷰",
+   "콘도 디럭스 트윈 파크뷰",
+   "콘도 스탠다드 더블 오션뷰",
+   "콘도 스탠다드 더블 일출 하프오션뷰"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "전망",
+    "count": 8,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 8,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 7,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "수영장",
+    "count": 7,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 47,
+  "description": "세상에서 가장 아름다운 해돋이를 볼 수 있는 곳, 가장 편하게 쉴 수 있는 곳, 사진 한 장에 모든것을 다 담을 수 없는 환상적인 곳. 정동진 천혜의 해안절경에 위치하고 있는 썬크루즈 리조트 & 요트는 고객님의품격있는 휴식과 가장 잘 어울리는 썬 라이징 프리미엄 육상 크루즈 리조트입니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000114130",
+  "tags": [
+   "넓은객실",
+   "바다뷰",
+   "수영장",
+   "주차",
+   "청결",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y3001494",
+  "yanolja_id": 3001494,
+  "name": "강릉 씨마크 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "강원",
+  "address": "강원도 강릉시 해안로406번길 2",
+  "lat": 37.797686,
+  "lng": 128.914773,
+  "capacity": 4,
+  "price_tier": 1,
+  "min_price": 44000,
+  "rating": 4.9,
+  "review_count": 301,
+  "amenities": [
+   "TV",
+   "금연",
+   "발코니",
+   "수영장",
+   "와이파이",
+   "조식",
+   "주차",
+   "테라스",
+   "피트니스"
+  ],
+  "room_types": [
+   "갤러리 디럭스 킹",
+   "더블 침대 2개",
+   "디럭스 킹 마운틴뷰",
+   "디럭스 킹 마운틴뷰 → 프리미엄 디럭스 킹 오션뷰",
+   "라이브특가★패밀리 2+2인",
+   "라이브특가★패밀리 3인",
+   "슈퍼싱글 침대 1개, 퀸 침대 1개",
+   "스튜디오 킹 마운틴뷰",
+   "이그제큐티브 스위트",
+   "코너 스위트"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "전망",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 2,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 21,
+  "description": "강릉 씨마크 호텔 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3001494",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "바다뷰",
+   "방2개이상",
+   "수영장",
+   "주차",
+   "청결",
+   "친절",
+   "해변"
+  ]
+ },
+ {
+  "id": "y10048697",
+  "yanolja_id": 10048697,
+  "name": "메이플비치골프앤리조트",
+  "brand": null,
+  "is_handys": false,
+  "region": "강원",
+  "address": "강원도 강릉시 강동면 염전길 255",
+  "lat": 37.746402755551635,
+  "lng": 128.975846059892,
+  "capacity": 5,
+  "price_tier": 3,
+  "min_price": null,
+  "rating": 4.9,
+  "review_count": 195,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 2개, 싱글 침대 2개",
+   "디럭스 더블",
+   "디럭스 스카이",
+   "디럭스 자쿠지",
+   "디럭스 자쿠지 코너",
+   "디럭스 트리플",
+   "싱글 침대 1개, 더블 침대 1개",
+   "패밀리"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "수영장",
+    "count": 8,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 7,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 7,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 7,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 4,
+    "tag": "친절",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 32,
+  "description": "자쿠지는 약간 플라스틱 재질이라 약간 낡은감은 있으나 바다를 보면서 반신욕을 할 수 있다는게 가장 큰 메리트입니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10048697",
+  "tags": [
+   "거실",
+   "리조트인접",
+   "바다뷰",
+   "방2개이상",
+   "수영장",
+   "업스케일",
+   "주차",
+   "청결",
+   "친절",
+   "해변"
+  ]
+ },
+ {
+  "id": "y10064830",
+  "yanolja_id": 10064830,
+  "name": "블루앤호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "강원",
+  "address": "강원특별자치도 강릉시 해안로 32",
+  "lat": 37.77564525329462,
+  "lng": 128.94200068405624,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 97,
+  "amenities": [
+   "TV",
+   "금연",
+   "와이파이",
+   "주차",
+   "커피"
+  ],
+  "room_types": [
+   "강릉 블루앤호텔 10층 코너객실에서 1박 했습니다.",
+   "슈퍼싱글 침대 2개",
+   "퀸 침대 1개, 슈퍼싱글 침대 1개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 13,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 11,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 10,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 9,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "비대면체크인",
+    "count": 6,
+    "tag": "비대면체크인",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 51,
+  "description": "무엇보다 좋았던 건 호텔 규모가 너무 크지 않아서 번잡하지 않고, 전체적으로 여유롭고 차분한 분위기라는 점이에요. 로비에서 보이는 솔밭이랑 바다뷰가 정말 예쁜데, 그대로 나가서 솔밭 따라 걷다 보면 안목 커피거리까지 이어지는 동선이 너무 좋더라고요.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10064830",
+  "tags": [
+   "바다뷰",
+   "비대면체크인",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y3000938",
+  "yanolja_id": 3000938,
+  "name": "쏠비치 양양 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "강원",
+  "address": "강원도 양양군 손양면 선사유적로 678",
+  "lat": 38.087918,
+  "lng": 128.665748,
+  "capacity": 5,
+  "price_tier": 1,
+  "min_price": 44000,
+  "rating": 4.6,
+  "review_count": 867,
+  "amenities": [
+   "TV",
+   "금연",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "취사",
+   "커피"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 2개",
+   "스위트 디럭스/스탠다드/더블",
+   "스위트 디럭스/스탠다드/패밀리 트윈",
+   "스위트 디럭스/오션뷰/더블",
+   "실버 엠버서더/오션뷰/더블",
+   "이그제큐티브/스탠다드/패밀리 트윈",
+   "이그제큐티브/오션뷰/패밀리 트윈",
+   "패밀리 슈페리어/스탠다드/더블"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "바다뷰",
+    "count": 6,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 6,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 4,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 4,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 32,
+  "description": "관계자분들 오션플레이랑 조식 가격좀 한번 고민해봐주세요~^^ 더더 활성화되기를 바라는 1인의 의견입니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000938",
+  "tags": [
+   "가성비",
+   "거실",
+   "넓은객실",
+   "바다뷰",
+   "방2개이상",
+   "수영장",
+   "주방",
+   "주차",
+   "청결",
+   "친절",
+   "키즈",
+   "해변"
+  ]
+ },
+ {
+  "id": "y3001599",
+  "yanolja_id": 3001599,
+  "name": "쏠비치 양양 리조트",
+  "brand": null,
+  "is_handys": false,
+  "region": "강원",
+  "address": "강원도 양양군 손양면 선사유적로 678",
+  "lat": 38.087918,
+  "lng": 128.665748,
+  "capacity": 10,
+  "price_tier": 3,
+  "min_price": null,
+  "rating": 4.5,
+  "review_count": 528,
+  "amenities": [
+   "TV",
+   "금연",
+   "수영장",
+   "와이파이",
+   "조식",
+   "주방",
+   "주차",
+   "취사",
+   "커피"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "스위트 스탠다드는 넓고 가족 여행에 공간이 잘 맞음",
+   "스위트-Pet Friendly/스탠다드/침대",
+   "스위트-취사/스탠다드/침대",
+   "스위트-취사/오션뷰/침대",
+   "스위트-클린/스탠다드/침대",
+   "스위트-클린/오션뷰/침대",
+   "스위트에서 위생문제로 방바꾸어주셨는데",
+   "패밀리-취사/스탠다드/침대"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "바다뷰",
+    "count": 5,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 3,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 26,
+  "description": "가족과 함께 처음 머문 숙소인데 다들 만족도가 높음. 숙소 뷰(오션)도 멋지고 지하에 모든 곳이 연결되어 있어서 이동하며 미로 탐험하는 재미도 있었음. 저녁에 조각배가 있는 연못 조명도 멋있었음. 조식도 다양하고 사전 예약으로 편안하고 여유롭게 먹을 수 있어서 좋았음. 가을에도 가족과 동해안에 온다면 꼭 머무르고 싶은 숙소임.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3001599",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "리조트인접",
+   "바다뷰",
+   "방2개이상",
+   "수영장",
+   "업스케일",
+   "주방",
+   "주차",
+   "키즈",
+   "해변"
+  ]
+ },
+ {
+  "id": "y3001667",
+  "yanolja_id": 3001667,
+  "name": "투와이 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "강원",
+  "address": "강원도 양양군 강현면 동해대로 3277-3",
+  "lat": 38.131769,
+  "lng": 128.620656,
+  "capacity": 8,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.2,
+  "review_count": 1277,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 2개",
+   "더블 침대 3개",
+   "디럭스 더블 오션뷰",
+   "디럭스 트윈 오션뷰",
+   "로얄 스위트 오션뷰",
+   "스탠다드 더블 마운틴뷰",
+   "스탠다드 트윈 마운틴뷰",
+   "코너 스위트 오션뷰",
+   "패밀리 스위트 마운틴뷰"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "바다뷰",
+    "count": 7,
+    "tag": "바다뷰",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 3,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 30,
+  "description": "편의점이 걸어가기에는 조금 애매한 위치여서 들어오기 전에 구매하고 오는 걸 추천해요 !",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3001667",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "바다뷰",
+   "방2개이상",
+   "주방",
+   "주차",
+   "청결",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y3002096",
+  "yanolja_id": 3002096,
+  "name": "네스트 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "경기·인천",
+  "address": "인천 영종구 영종해안남로 19-122",
+  "lat": 37.424873,
+  "lng": 126.427989,
+  "capacity": 3,
+  "price_tier": 1,
+  "min_price": 45000,
+  "rating": 4.9,
+  "review_count": 3576,
+  "amenities": [
+   "TV",
+   "금연",
+   "발코니",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "테라스",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "디럭스 더블 마운틴뷰",
+   "디럭스 더블 오션뷰",
+   "디럭스 트윈 벙커룸 마운틴뷰",
+   "디럭스 트윈 벙커룸 오션뷰",
+   "리드 스위트 오션뷰",
+   "슈페리어 더블 오션뷰",
+   "스탠다드 더블 마운틴뷰",
+   "스탠다드 더블 오션뷰"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "수영장",
+    "count": 6,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 5,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 3,
+    "tag": "가성비",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 2,
+    "tag": "친절",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 23,
+  "description": "5성급 호텔치고는 규모와 설비가 협소하고 형식적인 편이나 가격과 제공서비스는 최상급입니다 특히 한적하나 자연친화적인 공간에 위치하고 있어 스트레스의 이완과 해방감을 느낄 수 있는 서울 스트레스 이완의 최고 가성비&최적 포지셔닝 호텔입니다 물론 저 개인적인 경험치 기준입니다 대도시의 압박감의 이완을 원하신다면 합리적인 소비로서의 선택지로 강추합니다",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3002096",
+  "tags": [
+   "가성비",
+   "넓은객실",
+   "수영장",
+   "주차",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y3000998",
+  "yanolja_id": 3000998,
+  "name": "송도 센트럴파크 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "경기·인천",
+  "address": "인천광역시 연수구 테크노파크로 193",
+  "lat": 37.390895,
+  "lng": 126.637121,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.6,
+  "review_count": 5263,
+  "amenities": [
+   "TV",
+   "금연",
+   "반려동물",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "디럭스 더블 파크앤시티",
+   "디럭스 더블-센트럴파크뷰",
+   "디럭스 패밀리트윈",
+   "스카이 디럭스",
+   "싱글 침대 1개, 더블 침대 1개",
+   "전 객실 대리석 온돌 난방(난방 시즌만 가동)",
+   "트윈베드",
+   "파크 스위트-센트럴파크뷰"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "가족",
+    "count": 5,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 1,
+    "tag": "넓은객실",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 26,
+  "description": "인천 지하철 1호선 센트럴파크역 3번 출구 도보 4분, 강남 M버스 정류장 인접, 인천공항 20분 거리의 근접한 편리한 위치에요~",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000998",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "주차",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y3000622",
+  "yanolja_id": 3000622,
+  "name": "오라카이 송도파크 호텔, BW 프리미어 컬렉션",
+  "brand": null,
+  "is_handys": false,
+  "region": "경기·인천",
+  "address": "인천광역시 연수구 테크노파크로 151",
+  "lat": 37.388092,
+  "lng": 126.640783,
+  "capacity": 4,
+  "price_tier": 1,
+  "min_price": 44000,
+  "rating": 4.9,
+  "review_count": 3993,
+  "amenities": [
+   "TV",
+   "금연",
+   "넷플릭스",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 2개",
+   "디럭스 더블",
+   "디럭스 더블 장애인객실",
+   "디럭스 더블 파크뷰",
+   "디럭스 스위트",
+   "디럭스 트윈",
+   "디럭스 트윈 파크뷰",
+   "디럭스 헐리우드 더블 파크뷰",
+   "싱글 침대 2개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "수영장",
+    "count": 3,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "출장",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 39,
+  "description": "컨벤시아, 대형마트, 아울렛, 센트럴파크가 인근에 있어 비즈니스 및 도심 속 여행을 즐기시기에 최적의 호텔입니다",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000622",
+  "tags": [
+   "가성비",
+   "넓은객실",
+   "수영장",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y10041889",
+  "yanolja_id": 10041889,
+  "name": "제이앤파크 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "경기·인천",
+  "address": "인천 영종구 용유서로 262-15",
+  "lat": 37.444842,
+  "lng": 126.378822,
+  "capacity": 4,
+  "price_tier": 3,
+  "min_price": 300000,
+  "rating": 4.7,
+  "review_count": 1124,
+  "amenities": [
+   "TV",
+   "금연",
+   "발코니",
+   "수영장",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "키즈",
+   "테라스"
+  ],
+  "room_types": [
+   "가든 트윈",
+   "디럭스 더블",
+   "디럭스 트윈",
+   "제이앤파크 스위트",
+   "코너 더블",
+   "키즈 디럭스 더블",
+   "키즈 패밀리 트윈",
+   "키즈 프리미어 패밀리",
+   "테라스 스위트",
+   "테라스 트윈"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "수영장",
+    "count": 9,
+    "tag": "수영장",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 5,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 4,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "바다뷰",
+    "count": 3,
+    "tag": "바다뷰",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 48,
+  "description": "옥상에 수영장도 날씨가 너무 추워 오래 놀지 못했지만 적지 않은 넓이로 날씨만 좋다면 한참을 증길수 있을거라 생가합니다  즈차장도 넓은편이고 을왕리해수욕장이 걸어서 10분정도 거리에 있는 바다뷰",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10041889",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "바다뷰",
+   "방2개이상",
+   "수영장",
+   "업스케일",
+   "주차",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y10047924",
+  "yanolja_id": 10047924,
+  "name": "UH 플랫 더 송도",
+  "brand": null,
+  "is_handys": false,
+  "region": "경기·인천",
+  "address": "인천광역시 연수구 아트센터대로168번길 100",
+  "lat": 37.4055193,
+  "lng": 126.6293431,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 2036,
+  "amenities": [
+   "TV",
+   "금연",
+   "넷플릭스",
+   "반려동물",
+   "와이파이",
+   "주방",
+   "주차",
+   "취사"
+  ],
+  "room_types": [],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 3,
+    "tag": "가성비",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 26,
+  "description": "인천대교가 보이는 고층 객실에서 일하고, 송도 센트럴파크를 걸으며 쉬는 특별한 워케이션을 경험하세요. UH 플랫 더 송도는 일과 휴식의 경계를 허무는 송도 최고의 레지던스 호텔입니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10047924",
+  "tags": [
+   "가성비",
+   "주방",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y3000883",
+  "yanolja_id": 3000883,
+  "name": "라마다 송도",
+  "brand": null,
+  "is_handys": false,
+  "region": "경기·인천",
+  "address": "인천광역시 연수구 능허대로267번길 29",
+  "lat": 37.414314,
+  "lng": 126.655356,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.4,
+  "review_count": 1617,
+  "amenities": [
+   "TV",
+   "금연",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 or 트윈",
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "디럭스 더블",
+   "디럭스 트윈"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "욕실",
+    "count": 7,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 6,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 5,
+    "tag": "가성비",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 4,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 21,
+  "description": "송도국제도시와 5분 거리에 위치해 편리한 교통망을 갖추고 있고 세련된 인테리어와 아늑한 분위기로 꾸며져 있는 호텔입니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000883",
+  "tags": [
+   "가성비",
+   "넓은객실",
+   "주차"
+  ]
+ },
+ {
+  "id": "y10053783",
+  "yanolja_id": 10053783,
+  "name": "모두스테이 송도",
+  "brand": null,
+  "is_handys": false,
+  "region": "경기·인천",
+  "address": "인천광역시 연수구 아트센터대로168번길 101 (송도랜드마크푸르지오시티)",
+  "lat": 37.405170218630744,
+  "lng": 126.62839480092198,
+  "capacity": 6,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.9,
+  "review_count": 101,
+  "amenities": [
+   "TV",
+   "금연",
+   "세탁기",
+   "에어컨",
+   "와이파이",
+   "주방",
+   "주차",
+   "커피",
+   "키즈"
+  ],
+  "room_types": [
+   "슈퍼싱글 침대 2개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 6,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 4,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 4,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "비대면체크인",
+    "count": 3,
+    "tag": "비대면체크인",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 38,
+  "description": "다른 업체와 가장 두드러지는 차이점은 다른 곳은 욕실이나 욕실 슬리퍼 냄새가 날 때 많은데 모두 스테이는 항상 향기롭고 매우 깔끔합니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10053783",
+  "tags": [
+   "부티크",
+   "비대면체크인",
+   "세탁기",
+   "주방",
+   "주차",
+   "청결",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y10067900",
+  "yanolja_id": 10067900,
+  "name": "대구 동성로 머뭄",
+  "brand": null,
+  "is_handys": false,
+  "region": "대구",
+  "address": "대구광역시 중구 국채보상로 562",
+  "lat": 35.87042974250531,
+  "lng": 128.59223137346152,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 177,
+  "amenities": [
+   "TV",
+   "건조기",
+   "금연",
+   "세탁기",
+   "스타일러",
+   "엘리베이터",
+   "와이파이",
+   "주방",
+   "주차",
+   "취사"
+  ],
+  "room_types": [
+   "디럭스 룸"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 8,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 6,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 2,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "세탁기",
+    "count": 2,
+    "tag": "세탁기",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 34,
+  "description": "두번째 방문인데 항상 깨끗하게 방 유지해주셔서 너무 좋아요! 간단한 조리도구도 있고, 기본적인 것들 다 비치되어 있어서 편하게 오기 좋아요! 심지어 위치도 바로 중앙로역 옆이라서 더운날 별로 안 이동해도 되니까 좋았어여😍😍 담에 대구 오면 또올게요~~!!",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10067900",
+  "tags": [
+   "세탁기",
+   "주방",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y3010293",
+  "yanolja_id": 3010293,
+  "name": "대구 리버틴호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "대구",
+  "address": "대구광역시 중구 경상감영길 193",
+  "lat": 35.872204,
+  "lng": 128.59792,
+  "capacity": 6,
+  "price_tier": 1,
+  "min_price": 45000,
+  "rating": 4.9,
+  "review_count": 867,
+  "amenities": [
+   "TV",
+   "금연",
+   "발코니",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "테라스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "디럭스 스위트",
+   "스위트",
+   "스위트 - 발코니",
+   "스탠다드 더블",
+   "싱글 침대 1개, 더블 침대 2개",
+   "싱글 침대 3개",
+   "트윈방 넓고 깨끗하고 좋아요"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 7,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 6,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 4,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "소음",
+    "count": 3,
+    "tag": null,
+    "polarity": "-"
+   }
+  ],
+  "reviews_seen": 36,
+  "description": "직원 서비스, 객실상태 모두 만족하며 조식 메뉴가 한식도 있어 어른들도 즐길 수 있음. 길만 건너도 음식점과 술집이 많음. 인근에 편의점이 없어서 야식은 사가는 게 좋겠고 프론트에  맥주와 과자 자판기 있어 핵결은 가능함. 재방문 의사 있음.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3010293",
+  "tags": [
+   "가성비",
+   "넓은객실",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y3000945",
+  "yanolja_id": 3000945,
+  "name": "대구 엘디스 리젠트 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "대구",
+  "address": "대구광역시 중구 달구벌대로 2033",
+  "lat": 35.866525,
+  "lng": 128.586057,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.5,
+  "review_count": 752,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "메인 더블",
+   "메인 코리안 스위트",
+   "메인 트윈",
+   "본관 리젠트 스위트",
+   "신관 디럭스 더블 웨스트",
+   "신관 디럭스 더블 이스트",
+   "신관 디럭스 코리안 스위트",
+   "신관 디럭스 트윈",
+   "싱글 침대 1개, 더블 침대 1개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "위치",
+    "count": 7,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "가성비",
+    "count": 2,
+    "tag": "가성비",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 22,
+  "description": "일단 뷰가 너무 좋아서 대구오면 가끔 들리곤 하는 숙소인데요, 직원분들도 친절하시고 실내도 깔끔합니다. 동성로랑도 크게 멀지않고 백화점이랑도 가까워서 위치적으로도 만족하구요 가성비도 좋은 호텔이라고 생각합니다. 재방문 의사 100프로💗",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3000945",
+  "tags": [
+   "넓은객실",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y1000103681",
+  "yanolja_id": 1000103681,
+  "name": "대구 노블스테이 (Noblestay)",
+  "brand": null,
+  "is_handys": false,
+  "region": "대구",
+  "address": "대구광역시 중구 국채보상로 123길 23",
+  "lat": 35.871691,
+  "lng": 128.597279,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.7,
+  "review_count": 632,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차"
+  ],
+  "room_types": [
+   "디럭스 트리플",
+   "디럭스 트윈",
+   "스탠다드 더블 - 장애인 친화객실",
+   "싱글 침대 2개",
+   "싱글 침대 2개, 킹 침대 1개",
+   "싱글 침대 3개",
+   "주니어 스위트 킹",
+   "프리미엄 패밀리 킹",
+   "프리미엄 패밀리 트리플"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 6,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 6,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 6,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 4,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 36,
+  "description": "노블스테이 처음 방문했는데 너무 즐거웠고 직원분들 다 최고 실내화에 물 쏟아서 다시 부탁드렸는데도 친절하게 주시고,,",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000103681",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "부티크",
+   "주차",
+   "청결",
+   "친절"
+  ]
+ },
+ {
+  "id": "y1000100596",
+  "yanolja_id": 1000100596,
+  "name": "라마다 바이 윈덤 대전 (Ramada by Wyndham Daejeon)",
+  "brand": null,
+  "is_handys": false,
+  "region": "대전",
+  "address": "대전광역시 유성구 계룡로 127",
+  "lat": 36.353117,
+  "lng": 127.34483,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 2409,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "더블 침대 2개",
+   "디럭스 트윈",
+   "라마다 스위트",
+   "부티크 더블",
+   "스탠다드 트윈",
+   "싱글 침대 2개",
+   "패밀리 트윈"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "침구",
+    "count": 5,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 4,
+    "tag": "주차",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 2,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "조용함",
+    "count": 1,
+    "tag": "조용함",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 22,
+  "description": "유성온천역 도보 3분 거리, 차량1분거리, 유성 CGV(3월부터 메가박스 변경), 유성온천지구, 유성의 중심지 봉명동 카페거리 인근에 위치하여 접근성이 아주 뛰어난 호텔입니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000100596",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y3002306",
+  "yanolja_id": 3002306,
+  "name": "스탕달 호텔",
+  "brand": null,
+  "is_handys": false,
+  "region": "대전",
+  "address": "대전광역시 유성구 온천북로 14",
+  "lat": 36.356809,
+  "lng": 127.344608,
+  "capacity": 7,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 1655,
+  "amenities": [
+   "TV",
+   "금연",
+   "발코니",
+   "스타일러",
+   "어메니티",
+   "에어컨",
+   "엘리베이터",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "테라스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 3개",
+   "디럭스 더블",
+   "디럭스 더블 플러스",
+   "레지던스 디럭스 더블",
+   "레지던스 슈페리어 더블",
+   "레지던스 스위트 트윈",
+   "레지던스 패밀리",
+   "슈페리어 더블",
+   "슈페리어 더블 플러스"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "넓음",
+    "count": 3,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 3,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "가족",
+    "count": 1,
+    "tag": "키즈",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 23,
+  "description": "객실은 랜덤배정이기 때문에, 원하시는 타입이 있으시면 미리 호텔로 연락 부탁드립니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/3002306",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "주차"
+  ]
+ },
+ {
+  "id": "y10066221",
+  "yanolja_id": 10066221,
+  "name": "미타스야 료칸 호텔 대전 유성점",
+  "brand": null,
+  "is_handys": false,
+  "region": "대전",
+  "address": "대전광역시 유성구 한밭대로492번길 16-26",
+  "lat": 36.35894921788611,
+  "lng": 127.3515612989123,
+  "capacity": 4,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.8,
+  "review_count": 45,
+  "amenities": [
+   "TV",
+   "건조기",
+   "금연",
+   "세탁기",
+   "스타일러",
+   "와이파이",
+   "조식",
+   "주차",
+   "키즈"
+  ],
+  "room_types": [
+   "온돌방이 겁나 뜨끈뜨끈했어요 ~",
+   "트윈베드"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "친절",
+    "count": 4,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "청결",
+    "count": 2,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "조용함",
+    "count": 2,
+    "tag": "조용함",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 2,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "주차",
+    "count": 2,
+    "tag": "주차",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 24,
+  "description": "미타스야 료칸 호텔 대전 유성점 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10066221",
+  "tags": [
+   "세탁기",
+   "주차",
+   "친절",
+   "키즈"
+  ]
+ },
+ {
+  "id": "y10067655",
+  "yanolja_id": 10067655,
+  "name": "L7충장 바이 롯데호텔 (구, 라마다플라자 바이 윈덤 충장)",
+  "brand": null,
+  "is_handys": false,
+  "region": "광주",
+  "address": "광주광역시 동구 천변우로 369",
+  "lat": 35.14777430411036,
+  "lng": 126.91158520755607,
+  "capacity": 3,
+  "price_tier": 3,
+  "min_price": null,
+  "rating": 4.6,
+  "review_count": 21,
+  "amenities": [
+   "TV",
+   "금연",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "피트니스"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "디럭스 킹 더블",
+   "디럭스 패밀리 트윈",
+   "디럭스 헐리우드 더블",
+   "스탠다드 더블",
+   "스탠다드 패밀리 트윈",
+   "아티스트 스위트 더블",
+   "아티스트 스위트 패밀리 트윈",
+   "퀸 침대 1개, 싱글 침대 1개",
+   "킹 침대 1개, 싱글 침대 1개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 3,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "넓음",
+    "count": 3,
+    "tag": "넓은객실",
+    "polarity": "+"
+   },
+   {
+    "keyword": "욕실",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "전망",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 1,
+    "tag": "친절",
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 26,
+  "description": "L7충장 바이 롯데호텔 (구, 라마다플라자 바이 윈덤 충장) 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10067655",
+  "tags": [
+   "거실",
+   "넓은객실",
+   "방2개이상",
+   "업스케일",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y10047529",
+  "yanolja_id": 10047529,
+  "name": "광주 브라운도트 호텔 충장로",
+  "brand": null,
+  "is_handys": false,
+  "region": "광주",
+  "address": "금남로4가역 광주1호선 도보 8분 거리",
+  "lat": 35.147324439114136,
+  "lng": 126.91284920934237,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.5,
+  "review_count": 84,
+  "amenities": [
+   "TV",
+   "금연",
+   "넷플릭스",
+   "스타일러",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차"
+  ],
+  "room_types": [
+   "더블 침대 1개",
+   "더블 침대 1개, 싱글 침대 1개",
+   "디럭스",
+   "트윈베드",
+   "패밀리",
+   "프리미엄 트윈"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 4,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 2,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "침구",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "역세권",
+    "count": 1,
+    "tag": "역세권",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 1,
+    "tag": null,
+    "polarity": "+"
+   }
+  ],
+  "reviews_seen": 23,
+  "description": "광주 브라운도트 호텔 충장로 호텔/리조트  예약, 가격, 위치, 객실 | NOL (야놀자)",
+  "source_url": "https://nol.yanolja.com/stay/domestic/10047529",
+  "tags": [
+   "거실",
+   "방2개이상",
+   "주차",
+   "청결"
+  ]
+ },
+ {
+  "id": "y1000102046",
+  "yanolja_id": 1000102046,
+  "name": "광주충장로 호텔아트하임",
+  "brand": null,
+  "is_handys": false,
+  "region": "광주",
+  "address": "전남광주통합특별시 동구 서석로10번길 5",
+  "lat": 35.14452,
+  "lng": 126.915591,
+  "capacity": 3,
+  "price_tier": 2,
+  "min_price": null,
+  "rating": 4.3,
+  "review_count": 158,
+  "amenities": [
+   "TV",
+   "금연",
+   "어메니티",
+   "와이파이",
+   "조식",
+   "주차",
+   "커피",
+   "피트니스"
+  ],
+  "room_types": [
+   "Room Only (트윈 포함 랜덤 배정)",
+   "디럭스 더블",
+   "디럭스 트윈",
+   "스탠다드 더블",
+   "스탠다드 트윈",
+   "싱글 침대 2개"
+  ],
+  "review_keywords": [
+   {
+    "keyword": "청결",
+    "count": 5,
+    "tag": "청결",
+    "polarity": "+"
+   },
+   {
+    "keyword": "친절",
+    "count": 3,
+    "tag": "친절",
+    "polarity": "+"
+   },
+   {
+    "keyword": "위치",
+    "count": 2,
+    "tag": null,
+    "polarity": "+"
+   },
+   {
+    "keyword": "조용함",
+    "count": 2,
+    "tag": "조용함",
+    "polarity": "+"
+   },
+   {
+    "keyword": "소음",
+    "count": 2,
+    "tag": null,
+    "polarity": "-"
+   }
+  ],
+  "reviews_seen": 22,
+  "description": "등산을 좋아하신다면 호텔에서 불과 5킬로미터 떨어져 있는 무등산국립공원을 방문해보십시오. 가벼운 차림으로도 등반이 가능합니다.",
+  "source_url": "https://nol.yanolja.com/stay/domestic/1000102046",
+  "tags": [
+   "주차",
+   "청결",
+   "친절"
+  ]
+ }
+]
