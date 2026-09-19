@@ -546,15 +546,15 @@ def seed_demo():
         has_users = q1(c, "SELECT COUNT(*) AS n FROM users")["n"]
         has_trips = q1(c, "SELECT COUNT(*) AS n FROM trips")["n"]
     if not has_users:
-        owen = create_user(UserIn(name="오웬"))["id"]
+        owen = create_user(UserIn(name="루니"))["id"]
         jimin = create_user(UserIn(name="지민"))["id"]
-        signup(owen, SignupIn(nickname="오웬"))
+        signup(owen, SignupIn(nickname="루니"))
         signup(jimin, SignupIn(nickname="지민"))
         answer_quiz(owen, QuizIn(answers=["1:1", "2:2", "3:1", "4:1", "5:1"]))   # 도심·야경·외식·위치·대중교통
         answer_quiz(jimin, QuizIn(answers=["1:3", "2:1", "3:2", "4:2", "5:2"]))  # 숙소가 목적·바다·해먹기·넓이·자차
     if not has_trips:
         with conn() as c:
-            owen = q1(c, "SELECT id FROM users WHERE name='오웬'")["id"]
+            owen = q1(c, "SELECT id FROM users WHERE name='루니'")["id"]
             jimin = q1(c, "SELECT id FROM users WHERE name='지민'")["id"]
         tid = create_trip(TripIn(name="10월 부산", companions="커플", people=2, region="부산", purposes=["휴양", "맛집"], member_ids=[owen, jimin], created_by=owen))["id"]
         vote(tid, VoteIn(user_id=jimin, stay_id="y1000112007", kind="drop", reason="d_city", note="서면은 너무 복잡해"))   # 어반스테이 서면
@@ -572,7 +572,7 @@ def seed_history():
         uid = create_user(UserIn(name=name))["id"]
         answer_quiz(uid, QuizIn(answers=answers)); signup(uid, SignupIn(nickname=name)); names[name] = uid
         return uid
-    owen = user("오웬", ["1:1", "2:2", "3:1", "4:1", "5:1"]); jimin = user("지민", ["1:3", "2:1", "3:2", "4:2", "5:2"])
+    owen = user("루니", ["1:1", "2:2", "3:1", "4:1", "5:1"]); jimin = user("지민", ["1:3", "2:1", "3:2", "4:2", "5:2"])
     haeun = user("하은", ["1:3", "2:3", "3:2", "4:4", "5:2"]); minjun = user("민준", ["1:1", "2:4", "3:1", "4:3", "5:1"])
     subin = user("수빈", ["1:2", "2:1", "3:2", "4:2", "5:1"]); jiwoo = user("지우", ["1:2", "2:1", "3:3", "4:2", "5:2"])
     seoyeon = user("서연", ["1:3", "2:2", "3:1", "4:4", "5:1"]); doyun = user("도윤", ["1:2", "2:3", "3:2", "4:2", "5:2"])

@@ -534,3 +534,9 @@
 - **AI 출력**: rebase --onto 로 해당 커밋을 히스토리에서 제거, `.gitignore` 에 `.claude/` 추가, force push. 훅은 로컬에서 계속 동작.
 - **검토**: AI 가 push 후 원격 파일 목록에서 .claude/·AI_PROMPTS.md 부재 확인.
 - **결과**: 채택.
+
+### 2026-09-19 11:04 — 데모 유저 "오웬" → "루니"
+- **요청**: 유저에 오웬이 있는데 루니로 변경.
+- **AI 출력**: `api/main.py` 시드(seed_demo·seed_history)의 이름·닉네임 문자열과 변수명(owen → luni), README §3 프론트의 예시 문장, `docs/SCHEMA.md` 예시 행 치환. 실행 중 DB 는 UPDATE 로 name·nickname 변경(컨테이너 재생성 없음).
+- **검토**: AI 가 코드·문서 grep 으로 "오웬" 잔여 0 확인, `/api/users` 와 여행 3 보드 응답에 루니만 나오는 것 확인. AI_LOG 과거 항목의 "오웬" 은 당시 사실이라 그대로 둠.
+- **결과**: 채택.

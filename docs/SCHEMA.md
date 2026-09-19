@@ -143,7 +143,7 @@ flowchart LR
 
 ### 원본
 
-`users`: 1 오웬 · 2 지민 (둘 다 가입 완료: nickname 설정, joined_at 있음. 초대 링크로 테스트만 한 사람은 nickname NULL 인 게스트)
+`users`: 1 루니 · 2 지민 (둘 다 가입 완료: nickname 설정, joined_at 있음. 초대 링크로 테스트만 한 사람은 nickname NULL 인 게스트)
 `trips`: 1 "10월 부산" · 커플 · 2명 · 부산 · ["휴양","맛집"] · created_by 1
 `trip_members`: (1, 1), (1, 2) · `trip_candidates`: s04, s05, s06 (모두 auto)
 
